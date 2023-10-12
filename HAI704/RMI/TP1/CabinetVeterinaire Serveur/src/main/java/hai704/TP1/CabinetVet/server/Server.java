@@ -1,8 +1,10 @@
 package hai704.TP1.CabinetVet.server;
 
-//import hai704.TP1.CabinetVet.IAnimal;
 import hai704.TP1.CabinetVet.internal.service.IAnimalImplementation;
-import hai704.TP1.CabinetVeterinaire.IAnimal;
+import hai704.TP1.CabinetVet.internal.service.ISpecyImplementation;
+import hai704.TP1.CabinetVeterinaire.Interface.IAnimal;
+import hai704.TP1.CabinetVeterinaire.Interface.ISpecy;
+
 
 import java.io.File;
 import java.net.URL;
@@ -24,15 +26,16 @@ public class Server {
         Registry registry;
         try {
             IAnimalImplementation animalImplementationObj = new IAnimalImplementation();
-            System.out.println("-----  ------ \\        /");
-            System.out.println("|      |       \\      /");
-            System.out.println("-----  |___     \\    /");
-            System.out.println("    |  |         \\  /");
-            System.out.println("-----  |_____     \\/");
+            ISpecy specyObj = new ISpecyImplementation();
+            System.out.println("-----  ------ \\        / -----  ------ ");
+            System.out.println("|      |       \\      /  |      |     | ");
+            System.out.println("-----  |___     \\    /   -----  |___ /    ");
+            System.out.println("    |  |         \\  /    |      |   \\");
+            System.out.println("-----  |_____     \\/     |_____ |    \\");
             Scanner scanner = new Scanner(System.in);
 
             System.out.println("Before Input: "+userDefinedPort);
-            System.out.println("Avez-vous un numero de port pour le registre? ( 0 ou Touche \"Entrée\" sinon):");
+//            System.out.println("Avez-vous un numero de port pour le registre? ( 0 ou Touche \"Entrée\" sinon):");
 //             if (scanner.hasNextLine()) {
 //                 userDefinedPort = scanner.nextInt();
 //                 System.out.println("Between Input: "+userDefinedPort);
@@ -74,15 +77,24 @@ public class Server {
 
             registry = LocateRegistry.createRegistry(userDefinedPort);
 
-            // Publishing
+            // Publishing IAnimal
             registry.bind("IAnimal", animalImplementationObj);
-            System.err.println("Server UP ...");
+//            System.err.println("Server UP ...");
             IAnimal pub = (IAnimal) registry.lookup("IAnimal");
+
+            // Publishing ISpecy
+            registry.bind("ISpecy", specyObj);
+            System.err.println("Server UP ...");
+            ISpecy pubSpecy = (ISpecy) registry.lookup("ISpecy");
+
             System.err.println(pub);
+            System.err.println(pubSpecy);
 
             // 1-Q2. Security policy
-            URL fileUrl = Server.class.getResource("security.policy");
-            String filePath = fileUrl.getPath().toString();
+            URL fileUrl = Server.class.getClassLoader().getResource("security.policy");
+            assert fileUrl != null;
+            String filePath = new File(fileUrl.getFile()).getAbsolutePath();
+//            System.out.println("file path: "+filePath);
             System.setProperty("java.security.policy", filePath);
 
         } catch (RemoteException e) {

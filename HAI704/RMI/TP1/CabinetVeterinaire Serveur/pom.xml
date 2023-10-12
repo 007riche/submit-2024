@@ -8,10 +8,11 @@
     <artifactId>CabinetVeterinaireServeur</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
+
         <dependency>
             <groupId>hai704.TP1.CabinetVeterinaire</groupId>
-            <artifactId>CabinetVeterinaire_Common</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <artifactId>CabinetVeterinaireCommon</artifactId>
+            <version>final</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>

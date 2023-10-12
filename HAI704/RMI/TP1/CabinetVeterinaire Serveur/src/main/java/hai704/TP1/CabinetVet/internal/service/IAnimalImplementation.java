@@ -1,25 +1,33 @@
 package hai704.TP1.CabinetVet.internal.service;
 
-//import hai704.TP1.CabinetVet.IAnimal;
-import hai704.TP1.CabinetVet.internal.data.Animal;
-import hai704.TP1.CabinetVeterinaire.IAnimal;
+
+
+
+import hai704.TP1.CabinetVeterinaire.Classes.Animal;
+import hai704.TP1.CabinetVeterinaire.Classes.Specy;
+import hai704.TP1.CabinetVeterinaire.Interface.IAnimal;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+
 
 public class IAnimalImplementation extends UnicastRemoteObject implements IAnimal {
-    // Exemple of service data
+    // Exemple of service models
 
     // A single animal for question 1, Service on a single instance of Animal
     private Animal seulPatient;
+    private Animal currentPatient;
+
+    ISpecyImplementation specyService = new ISpecyImplementation();
 
 
 
     public IAnimalImplementation() throws RemoteException {
-        this.seulPatient = new Animal("Shepherd", "Jul", "Chihuahua", "Dog");
+        this.seulPatient = new Animal("Shepherd", "Jul", "Chihuahua", new Specy("Dog"));
+    }
+
+    public IAnimalImplementation(Animal animal) throws RemoteException {
+
     }
 
    // public void generatePatient() {
@@ -34,63 +42,150 @@ public class IAnimalImplementation extends UnicastRemoteObject implements IAnima
 //    }
 
     @Override
-    public String getFullName() {
+    public String getFullNameTest() {
         return this.seulPatient.getFullName();
     }
 
     @Override
-    public String getName() {
+    public String getNameTest() {
         return this.seulPatient.getName();
     }
 
     @Override
-    public boolean updateName(String name) {
+    public boolean updateNameTest(String name) {
         this.seulPatient.setName(name);
         return true;
     }
 
     @Override
-    public String getMasterName() {
+    public String getMasterNameTest() {
         return this.seulPatient.getMasterName();
     }
 
     @Override
-    public boolean updateMasterName(String masterName) {
+    public boolean updateMasterNameTest(String masterName) {
         this.seulPatient.setMasterName(masterName);
         return true;
     }
 
     @Override
-    public String getBreed() {
+    public String getBreedTest() {
         return this.seulPatient.getBreed();
     }
 
     @Override
-    public boolean updateBreed(String breed) {
+    public boolean updateBreedTest(String breed) {
         this.seulPatient.setBreed(breed);
         return true;
     }
 
+
     @Override
-    public String getSpecie() {
-        return this.seulPatient.getSpecie();
+    public Specy getSpecyTest() throws RemoteException {
+//        return this.seulPatient.getSpecy();
+        return specyService.getSpecyByName(this.seulPatient.getName());
     }
 
     @Override
-    public boolean updateSpecie(String specie) {
-        this.seulPatient.setSpecie(specie);
-        return true;
+    public String getSpecyNameTest() throws RemoteException {
+        return specyService.getSpecyName();
     }
+
+
+    @Override
+    public Double getAverageLifeSpanInDaysTest(String specyName) throws RemoteException {
+        return specyService.getAverageLifeSpanInDays(this.seulPatient.getName());
+    }
+
+    @Override
+    public Double getAverageLifeSpanInDaysTest() throws RemoteException {
+        return specyService.getAverageLifeSpanInDays();
+    }
+
+//    @Override
+//    public boolean updateSpecy(String specie) {
+//        this.seulPatient.setSpecie(specie);
+//        return true;
+//    }
 
     // Q3. feature implementation
     @Override
-    public String getContent() throws RemoteException {
+    public String getFollowUpFileContentTest() throws RemoteException {
         return null;
     }
 
     @Override
-    public boolean setContent(String content) throws RemoteException {
+    public boolean setFollowUpFileContentTest(String content) throws RemoteException {
+        return false;
+    }
+
+    @Override
+    public String getFullName() throws RemoteException {
+        return null;
+    }
+
+    @Override
+    public String getName() throws RemoteException {
+        return null;
+    }
+
+    @Override
+    public boolean updateName(String name) throws RemoteException {
+        return false;
+    }
+
+    @Override
+    public String getMasterName() throws RemoteException {
+        return null;
+    }
+
+    @Override
+    public boolean updateMasterName(String masterName) throws RemoteException {
+        return false;
+    }
+
+    @Override
+    public String getBreed() throws RemoteException {
+        return null;
+    }
+
+    @Override
+    public boolean updateBreed(String breed) throws RemoteException {
+        return false;
+    }
+
+    @Override
+    public Specy getSpecy() throws RemoteException {
+        return null;
+    }
+
+    @Override
+    public String getSpecyName() throws RemoteException {
+        return null;
+    }
+
+    @Override
+    public Double getAverageLifeSpanInDays(String specyName) throws RemoteException {
+        return null;
+    }
+
+    @Override
+    public Double getAverageLifeSpanInDays() throws RemoteException {
+        return null;
+    }
+
+    @Override
+    public String getFollowUpFileContent() throws RemoteException {
+        return null;
+    }
+
+    @Override
+    public boolean setFollowUpFileContent(String content) throws RemoteException {
         return false;
     }
     // Q3. feature implementation
+
+
+
+
 }

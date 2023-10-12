@@ -1,8 +1,9 @@
-package hai704.TP1.CabinetVet.internal.data;
+package hai704.TP1.CabinetVeterinaire.Classes;
 
 import java.io.Serializable;
 
 public class Specy implements Serializable {
+    private String ID; //Auto-generated, but not used
     private String name;
     private Double averageLifeSpanInDays;
 //    private Double averageLifeSpanInMonths;

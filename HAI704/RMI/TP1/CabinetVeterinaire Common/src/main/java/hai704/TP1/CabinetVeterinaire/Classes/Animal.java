@@ -1,12 +1,14 @@
-package hai704.TP1.CabinetVet.internal.data;
+package hai704.TP1.CabinetVeterinaire.Classes;
 
 import java.io.Serializable;
 
 public class Animal implements Serializable {
+    private String ID; //Auto-generated, but not used
     private String name;
     private String masterName;
     private String breed;
-    private String specy;
+//    private String specy;
+    private Specy specy;
     private FollowUpFile followUpFile;
 
 
@@ -15,18 +17,18 @@ public class Animal implements Serializable {
         this.name = name;
     }
 
-    public Animal(String name, String masterName, String breed, String specie) {
+    public Animal(String name, String masterName, String breed, Specy specy) {
         this.name = name;
         this.masterName = masterName;
         this.breed = breed;
-        this.specy = specie;
+        this.specy = specy;
     }
 
-    public Animal(String name, String masterName, String breed, String specie, FollowUpFile followUpFile) {
+    public Animal(String name, String masterName, String breed, Specy specy, FollowUpFile followUpFile) {
         this.name = name;
         this.masterName = masterName;
         this.breed = breed;
-        this.specy = specie;
+        this.specy = specy;
         this.followUpFile = followUpFile;
     }
 
@@ -35,7 +37,7 @@ public class Animal implements Serializable {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -43,7 +45,7 @@ public class Animal implements Serializable {
     }
 
     public String getMasterName() {
-        return masterName;
+        return this.masterName;
     }
 
     public void setMasterName(String masterName) {
@@ -51,23 +53,33 @@ public class Animal implements Serializable {
     }
 
     public String getBreed() {
-        return breed;
+        return this.breed;
     }
 
     public void setBreed(String breed) {
         this.breed = breed;
     }
 
-    public String getSpecie() {
+    // In first version
+//    public String getSpecy() {
+//        return this.specy;
+//    }
+//
+//    public void setSpecy(String specie) {
+//        this.specy = specie;
+//    }
+
+
+    public Specy getSpecy() {
         return specy;
     }
 
-    public void setSpecie(String specie) {
-        this.specy = specie;
+    public void setSpecy(Specy specy) {
+        this.specy = specy;
     }
 
     public FollowUpFile getFollowUpFile() {
-        return followUpFile;
+        return this.followUpFile;
     }
 
     public void setFollowUpFile(FollowUpFile followUpFile) {

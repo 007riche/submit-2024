@@ -1,9 +1,9 @@
-package hai704.TP1.CabinetVet.internal.data;
+package hai704.TP1.CabinetVeterinaire.Classes;
 
 import java.io.Serializable;
 
 public class FollowUpFile implements Serializable {
-    private String ID; //Auto-generated
+    private String ID; //Auto-generated, but not used
     private String content;
 
     public FollowUpFile() {

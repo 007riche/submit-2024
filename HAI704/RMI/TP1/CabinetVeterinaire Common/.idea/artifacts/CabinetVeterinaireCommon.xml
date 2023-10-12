@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CabinetVeterinaireCommon">
+    <output-path>$PROJECT_DIR$/out/artifacts/CabinetVeterinaireCommon</output-path>
+    <root id="archive" name="CabinetVeterinaireCommon.jar" />
+  </artifact>
+</component>

@@ -1,6 +1,7 @@
 package hai704.TP1.CabinetVet;
 
 import hai704.TP1.CabinetVeterinaire.IAnimal;
+import hai704.TP1.CabinetVeterinaire.ISpecy;
 
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
@@ -14,8 +15,13 @@ public class Main {
 
             // For question 1, test
             IAnimal iAnimalStub = (IAnimal) registry.lookup("IAnimal");
+            ISpecy iSpecy = (ISpecy) registry.lookup("ISpecy");
             System.err.println("Retrieved animal: "+iAnimalStub.getFullName());
             // End Q1
+
+            // 1-Q4.
+            System.out.println(iAnimalStub.getSpecyName());
+            System.out.println(iAnimalStub.getAverageLifeSpanInDays());
 
         } catch (RemoteException | NotBoundException e) {
             e.printStackTrace();
