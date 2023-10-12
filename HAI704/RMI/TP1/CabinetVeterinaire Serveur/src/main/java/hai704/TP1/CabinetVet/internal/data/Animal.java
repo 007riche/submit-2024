@@ -6,7 +6,8 @@ public class Animal implements Serializable {
     private String name;
     private String masterName;
     private String breed;
-    private String specie;
+    private String specy;
+    private FollowUpFile followUpFile;
 
 
 
@@ -18,7 +19,15 @@ public class Animal implements Serializable {
         this.name = name;
         this.masterName = masterName;
         this.breed = breed;
-        this.specie = specie;
+        this.specy = specie;
+    }
+
+    public Animal(String name, String masterName, String breed, String specie, FollowUpFile followUpFile) {
+        this.name = name;
+        this.masterName = masterName;
+        this.breed = breed;
+        this.specy = specie;
+        this.followUpFile = followUpFile;
     }
 
     public String getFullName() {
@@ -50,20 +59,30 @@ public class Animal implements Serializable {
     }
 
     public String getSpecie() {
-        return specie;
+        return specy;
     }
 
     public void setSpecie(String specie) {
-        this.specie = specie;
+        this.specy = specie;
+    }
+
+    public FollowUpFile getFollowUpFile() {
+        return followUpFile;
+    }
+
+    public void setFollowUpFile(FollowUpFile followUpFile) {
+        this.followUpFile = followUpFile;
     }
 
     @Override
     public String toString() {
-        return "Animal {" +
+        return "Animal{" +
                 "name='" + name + '\'' +
                 ", masterName='" + masterName + '\'' +
                 ", breed='" + breed + '\'' +
-                ", specie='" + specie + '\'' +
+                ", specie='" + specy + '\'' +
+                ", followUpFile=" + followUpFile +
                 '}';
     }
+
 }

@@ -23,4 +23,10 @@ public interface IAnimal extends Remote {
 
     boolean updateSpecie(String specie) throws  RemoteException;
 
+    // 1-Q3. feature
+     String getContent() throws  RemoteException;
+
+    boolean setContent(String content) throws  RemoteException;
+    // 1-Q3. feature
+
 }

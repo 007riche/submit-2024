@@ -81,4 +81,16 @@ public class IAnimalImplementation extends UnicastRemoteObject implements IAnima
         this.seulPatient.setSpecie(specie);
         return true;
     }
+
+    // Q3. feature implementation
+    @Override
+    public String getContent() throws RemoteException {
+        return null;
+    }
+
+    @Override
+    public boolean setContent(String content) throws RemoteException {
+        return false;
+    }
+    // Q3. feature implementation
 }

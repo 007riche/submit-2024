@@ -4,6 +4,8 @@ package hai704.TP1.CabinetVet.server;
 import hai704.TP1.CabinetVet.internal.service.IAnimalImplementation;
 import hai704.TP1.CabinetVeterinaire.IAnimal;
 
+import java.io.File;
+import java.net.URL;
 import java.rmi.AlreadyBoundException;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
@@ -12,9 +14,13 @@ import java.rmi.registry.Registry;
 import java.util.Scanner;
 
 public class Server {
+    public static String hostWithoutProto;
     public static void main(String[] args) {
         final Integer DEFAULTPORT = 1099;
         int userDefinedPort=1099;
+
+
+
         Registry registry;
         try {
             IAnimalImplementation animalImplementationObj = new IAnimalImplementation();
@@ -74,6 +80,10 @@ public class Server {
             IAnimal pub = (IAnimal) registry.lookup("IAnimal");
             System.err.println(pub);
 
+            // 1-Q2. Security policy
+            URL fileUrl = Server.class.getResource("security.policy");
+            String filePath = fileUrl.getPath().toString();
+            System.setProperty("java.security.policy", filePath);
 
         } catch (RemoteException e) {
 //            throw new RuntimeException(e);
