@@ -3,7 +3,7 @@ package hai704.TP1.CabinetVet.internal.service;
 //import hai704.TP1.CabinetVet.internal.models.Specy;
 
 
-import hai704.TP1.CabinetVeterinaire.Classes.Specy;
+//import hai704.TP1.CabinetVeterinaire.Classes.Specy;
 import hai704.TP1.CabinetVeterinaire.Interface.ISpecy;
 
 import java.rmi.RemoteException;

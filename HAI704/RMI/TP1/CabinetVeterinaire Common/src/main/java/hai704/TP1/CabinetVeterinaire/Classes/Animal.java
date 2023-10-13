@@ -1,5 +1,8 @@
 package hai704.TP1.CabinetVeterinaire.Classes;
 
+import hai704.TP1.CabinetVeterinaire.Classes.FollowUpFile;
+import hai704.TP1.CabinetVeterinaire.Classes.Specy;
+
 import java.io.Serializable;
 
 public class Animal implements Serializable {
@@ -32,31 +35,31 @@ public class Animal implements Serializable {
         this.followUpFile = followUpFile;
     }
 
-    public String getFullName() {
+    protected String getFullName() {
         return this.name+" "+this.masterName;
     }
 
-    public String getName() {
+    protected String getName() {
         return this.name;
     }
 
-    public void setName(String name) {
+    protected void setName(String name) {
         this.name = name;
     }
 
-    public String getMasterName() {
+    protected String getMasterName() {
         return this.masterName;
     }
 
-    public void setMasterName(String masterName) {
+    protected void setMasterName(String masterName) {
         this.masterName = masterName;
     }
 
-    public String getBreed() {
+    protected String getBreed() {
         return this.breed;
     }
 
-    public void setBreed(String breed) {
+    protected void setBreed(String breed) {
         this.breed = breed;
     }
 
@@ -70,19 +73,19 @@ public class Animal implements Serializable {
 //    }
 
 
-    public Specy getSpecy() {
+    protected Specy getSpecy() {
         return specy;
     }
 
-    public void setSpecy(Specy specy) {
+    protected void setSpecy(Specy specy) {
         this.specy = specy;
     }
 
-    public FollowUpFile getFollowUpFile() {
+    protected FollowUpFile getFollowUpFile() {
         return this.followUpFile;
     }
 
-    public void setFollowUpFile(FollowUpFile followUpFile) {
+    protected void setFollowUpFile(FollowUpFile followUpFile) {
         this.followUpFile = followUpFile;
     }
 
@@ -96,5 +99,7 @@ public class Animal implements Serializable {
                 ", followUpFile=" + followUpFile +
                 '}';
     }
+
+
 
 }

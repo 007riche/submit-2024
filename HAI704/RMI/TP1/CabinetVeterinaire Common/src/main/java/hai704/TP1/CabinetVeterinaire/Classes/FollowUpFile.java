@@ -13,11 +13,11 @@ public class FollowUpFile implements Serializable {
         this.content = content;
     }
 
-    public String getContent() {
+    protected String getContent() {
         return content;
     }
 
-    public void setContent(String content) {
+    protected void setContent(String content) {
         this.content = content;
     }
 }

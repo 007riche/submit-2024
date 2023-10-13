@@ -1,6 +1,6 @@
 package hai704.TP1.CabinetVeterinaire.Interface;
 
-//import hai704.TP1.CabinetVet.internal.models.Specy;
+
 
 import hai704.TP1.CabinetVeterinaire.Classes.Specy;
 

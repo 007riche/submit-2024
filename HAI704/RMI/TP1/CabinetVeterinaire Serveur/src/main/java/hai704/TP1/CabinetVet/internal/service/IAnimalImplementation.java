@@ -3,6 +3,9 @@ package hai704.TP1.CabinetVet.internal.service;
 
 
 
+//import hai704.TP1.CabinetVeterinaire.Classes.Animal;
+//import hai704.TP1.CabinetVeterinaire.Classes.Specy;
+import hai704.TP1.CabinetVet.internal.service.models.AnimalWrapperServer;
 import hai704.TP1.CabinetVeterinaire.Classes.Animal;
 import hai704.TP1.CabinetVeterinaire.Classes.Specy;
 import hai704.TP1.CabinetVeterinaire.Interface.IAnimal;
@@ -15,15 +18,15 @@ public class IAnimalImplementation extends UnicastRemoteObject implements IAnima
     // Exemple of service models
 
     // A single animal for question 1, Service on a single instance of Animal
-    private Animal seulPatient;
-    private Animal currentPatient;
+    private AnimalWrapperServer seulPatient;
+    private AnimalWrapperServer currentPatient;
 
     ISpecyImplementation specyService = new ISpecyImplementation();
 
 
 
     public IAnimalImplementation() throws RemoteException {
-        this.seulPatient = new Animal("Shepherd", "Jul", "Chihuahua", new Specy("Dog"));
+        this.seulPatient = new AnimalWrapperServer("Shepherd", "Jul", "Chihuahua", new Specy("Dog"));
     }
 
     public IAnimalImplementation(Animal animal) throws RemoteException {

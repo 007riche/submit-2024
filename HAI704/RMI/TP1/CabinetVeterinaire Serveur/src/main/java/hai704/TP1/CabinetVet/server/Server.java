@@ -27,11 +27,21 @@ public class Server {
         try {
             IAnimalImplementation animalImplementationObj = new IAnimalImplementation();
             ISpecy specyObj = new ISpecyImplementation();
-            System.out.println("-----  ------ \\        / -----  ------ ");
-            System.out.println("|      |       \\      /  |      |     | ");
-            System.out.println("-----  |___     \\    /   -----  |___ /    ");
-            System.out.println("    |  |         \\  /    |      |   \\");
-            System.out.println("-----  |_____     \\/     |_____ |    \\");
+//            System.out.println("_____  ______ \\\\        // _____  ______ ");
+//            System.out.println("|      |       \\\\      //  |      |     | ");
+//            System.out.println("|____  |___     \\\\    //   |____  |____/    ");
+//            System.out.println("    |  |         \\\\  //    |      |   \\");
+//            System.out.println("____|  |_____     \\\\//     |_____ |    \\");
+//            System.out.println("_____  ______   ||    ||   _____  ______ ");
+//            System.out.println("|      |        ||    ||   |      |     | ");
+//            System.out.println("|____  |___     \\\\    //   |____  |____/    ");
+//            System.out.println("    |  |         \\\\  //    |      |   \\");
+//            System.out.println("____|  |_____     \\\\//     |_____ |    \\");
+            System.out.println("|||||||  ||||||||  ||      ||  ||||||||  ||||||");
+            System.out.println("||       ||        ||      ||  ||        ||    ||");
+            System.out.println("|||||||  ||||       ||    ||   ||||      ||||||");
+            System.out.println("     ||  ||          ||  ||    ||        ||  ||");
+            System.out.println("|||||||  ||||||||     ||||     ||||||||  ||    ||    ||  ||   || ");
             Scanner scanner = new Scanner(System.in);
 
             System.out.println("Before Input: "+userDefinedPort);

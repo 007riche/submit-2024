@@ -19,19 +19,19 @@ public class Specy implements Serializable {
         this.averageLifeSpanInDays = averageLifeSpanInDays;
     }
 
-    public String getName() {
+    protected String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    protected void setName(String name) {
         this.name = name;
     }
 
-    public Double getAverageLifeSpanInDays() {
+    protected Double getAverageLifeSpanInDays() {
         return averageLifeSpanInDays;
     }
 
-    public void setAverageLifeSpanInDays(Double averageLifeSpanInDays) {
+    protected void setAverageLifeSpanInDays(Double averageLifeSpanInDays) {
         this.averageLifeSpanInDays = averageLifeSpanInDays;
     }
 
