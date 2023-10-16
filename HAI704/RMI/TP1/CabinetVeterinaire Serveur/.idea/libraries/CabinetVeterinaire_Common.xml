@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="CabinetVeterinaire Common">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../CabinetVeterinaire Common" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java" />
+    </SOURCES>
+  </library>
+</component>

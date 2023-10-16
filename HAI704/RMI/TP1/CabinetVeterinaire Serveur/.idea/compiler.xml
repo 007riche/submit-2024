@@ -7,11 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="CabinetVeterinaire Serveur" />
-        <module name="CabinetVeterinaireCommon" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="CabinetVeterinaire Common" target="11" />
       <module name="CabinetVeterinaire_Common" target="11" />
+      <module name="CabinetVeterinaireCommon" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

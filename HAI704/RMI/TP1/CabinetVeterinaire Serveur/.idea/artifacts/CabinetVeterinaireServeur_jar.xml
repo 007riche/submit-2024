@@ -3,7 +3,6 @@
     <output-path>$PROJECT_DIR$/out/artifacts/CabinetVeterinaireServeur_jar</output-path>
     <root id="archive" name="CabinetVeterinaire Serveur.jar">
       <element id="module-output" name="CabinetVeterinaire Serveur" />
-      <element id="module-output" name="CabinetVeterinaire_Common" />
     </root>
   </artifact>
 </component>

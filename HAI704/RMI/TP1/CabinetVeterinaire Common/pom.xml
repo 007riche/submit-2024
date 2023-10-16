@@ -4,17 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>hai704.TP1.CabinetVeterinaire</groupId>
-    <artifactId>CabinetVeterinaireCommon</artifactId>
-    <version>final</version>
-    <dependencies>
-        <dependency>
-            <groupId>hai704.TP1.CabinetVet</groupId>
-            <artifactId>CabinetVeterinaireServeur</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-    </dependencies>
+    <groupId>hai704.TP1.CabinetVeterinaire.Common</groupId>
+    <artifactId>CabinetVeterinaire_Common</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
