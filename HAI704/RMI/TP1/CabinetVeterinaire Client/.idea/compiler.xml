@@ -8,10 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="CabinetVeterinaire Client" />
         <module name="CabinetVeterinaire_Client" />
+        <module name="CabinetVeterinaire_Common" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="CabinetVeterinaire_Common" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>

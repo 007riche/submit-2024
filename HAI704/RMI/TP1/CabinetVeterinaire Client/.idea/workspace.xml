@@ -5,53 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="908f956a-bcff-48d7-801c-c6901e3cd890" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../CabinetVeterinaire Common/.idea/artifacts/CabinetVeterinaire_Common.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CabinetVeterinaire Common/CabinetVeterinaire Common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVetetrinaire/Serveur/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVetetrinaire/Serveur/models/AnimalWrapperServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../REST API/BookingSERVICE/src/main/java/com/todo/company/hai704/restapi/service/trash/NodeInformationSerializationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/CabinetVeterinaire_Common_1_0_SNAPSHOT.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hai704/TP1/CabinetVet/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hai704/TP1/CabinetVet/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/.idea/artifacts/CabinetVeterinaireCommon.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/.idea/artifacts/CabinetVeterinaire_Common.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java/hai704/TP1/CabinetVeterinaire/Classes/Animal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java/hai704/TP1/CabinetVeterinaire/Classes/FollowUpFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java/hai704/TP1/CabinetVeterinaire/Classes/Specy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java/hai704/TP1/CabinetVeterinaire/Interface/IAnimal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java/hai704/TP1/CabinetVeterinaire/Interface/ICabinet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java/hai704/TP1/CabinetVeterinaire/Interface/ISpecy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java/hai704/TP1/CabinetVeterinaire/Common/Classes/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java/Common/hai704/TP1/Cabinet/Veterinaire/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java/hai704/TP1/CabinetVeterinaire/Common/Classes/FollowUpFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java/Common/hai704/TP1/Cabinet/Veterinaire/FollowUpFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java/hai704/TP1/CabinetVeterinaire/Common/Classes/Specy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java/Common/hai704/TP1/Cabinet/Veterinaire/Specy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java/hai704/TP1/CabinetVeterinaire/Common/Interface/IAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java/Common/hai704/TP1/Cabinet/Veterinaire/IAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java/hai704/TP1/CabinetVeterinaire/Common/Interface/ICabinet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java/Common/hai704/TP1/Cabinet/Veterinaire/ICabinet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java/hai704/TP1/CabinetVeterinaire/Common/Interface/ISpecy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Common/src/main/java/Common/hai704/TP1/Cabinet/Veterinaire/ISpecy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/target/CabinetVeterinaire_Common-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/target/classes/hai704/TP1/CabinetVeterinaire/Common/Classes/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/target/classes/hai704/TP1/CabinetVeterinaire/Common/Classes/FollowUpFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/target/classes/hai704/TP1/CabinetVeterinaire/Common/Classes/Specy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/target/classes/hai704/TP1/CabinetVeterinaire/Common/Interface/IAnimal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/target/classes/hai704/TP1/CabinetVeterinaire/Common/Interface/ICabinet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/target/classes/hai704/TP1/CabinetVeterinaire/Common/Interface/ISpecy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/.idea/artifacts/CabinetVeterinaireServeur_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/.idea/libraries/CabinetVeterinaire_Common.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/out/artifacts/CabinetVeterinaireServeur_jar/CabinetVeterinaire Serveur.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVet/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVet/internal/service/IAnimalImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVetetrinaire/Serveur/service/IAnimalImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVet/internal/service/ICabinetImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVetetrinaire/Serveur/service/ICabinetImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVet/internal/service/ISpecyImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVetetrinaire/Serveur/service/ISpecyImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVet/internal/service/models/AnimalWrapperServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVet/internal/service/models/FollowUpFileWrapperServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVetetrinaire/Serveur/models/FollowUpFileWrapperServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVet/internal/service/models/SpecyWrapperServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVetetrinaire/Serveur/models/SpecyWrapperServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVet/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVetetrinaire/Serveur/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVetetrinaire/Serveur/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/Serveur/hai704/TP1/Cabinet/Vetetrinaire/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVetetrinaire/Serveur/models/AnimalWrapperServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/Serveur/hai704/TP1/Cabinet/Vetetrinaire/models/AnimalWrapperServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVetetrinaire/Serveur/models/FollowUpFileWrapperServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/Serveur/hai704/TP1/Cabinet/Vetetrinaire/models/FollowUpFileWrapperServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVetetrinaire/Serveur/models/SpecyWrapperServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/Serveur/hai704/TP1/Cabinet/Vetetrinaire/models/SpecyWrapperServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVetetrinaire/Serveur/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/Serveur/hai704/TP1/Cabinet/Vetetrinaire/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVetetrinaire/Serveur/service/IAnimalImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/Serveur/hai704/TP1/Cabinet/Vetetrinaire/service/IAnimalImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVetetrinaire/Serveur/service/ICabinetImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/Serveur/hai704/TP1/Cabinet/Vetetrinaire/service/ICabinetImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/hai704/TP1/CabinetVetetrinaire/Serveur/service/ISpecyImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/java/Serveur/hai704/TP1/Cabinet/Vetetrinaire/service/ISpecyImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/target/classes/hai704/TP1/CabinetVet/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/target/classes/hai704/TP1/CabinetVet/internal/service/IAnimalImplementation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/target/classes/hai704/TP1/CabinetVet/internal/service/ICabinetImplementation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/target/classes/hai704/TP1/CabinetVet/internal/service/ISpecyImplementation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/target/classes/hai704/TP1/CabinetVet/server/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/target/classes/security.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/resources/security.policy" beforeDir="false" afterPath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/main/resources/security.policy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CabinetVeterinaire Serveur/src/test/libraries/CabinetVeterinaireCommon_final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java(TM).rmi The Remote Method Invocation Guide by Esmond Pitt, Kathleen McNiff (z-lib.org).pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../java(TM).rmi The Remote Method Invocation Guide by Esmond Pitt, Kathleen McNiff (z-lib.org).pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
@@ -67,28 +76,37 @@
     </option>
   </component>
   <component name="ProjectId" id="2Wotq6YctvHEWwgHOohjFq27CGi" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/richard/Documents/Master 1/HAI704/TP1/CabinetVeterinaire Common",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.33793104",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;399&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/richard/Documents/Master 1 20232024/HAI704/RMI/TP1/CabinetVeterinaire Common&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.33793104&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\richard\Documents\Master 1\HAI704\TP1\CabinetVeterinaire Client\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\richard\Documents\Master 1 20232024\HAI704\RMI\TP1\CabinetVeterinaire Client\src\main\resources\icons\16x16" />
+      <recent name="C:\Users\richard\Documents\Master 1 20232024\HAI704\RMI\TP1\CabinetVeterinaire Client\src\main\java\hai704\TP1\CabinetVeterinaireClient\GUI\trash" />
+      <recent name="C:\Users\richard\Documents\Master 1 20232024\HAI704\RMI\TP1\CabinetVeterinaire Client\src\main\resources\icons\app" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -97,7 +115,27 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="DropdownExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hai704.TP1.CabinetVeterinaireClient.GUI.trash.DropdownExample" />
+      <module name="CabinetVeterinaire_Client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hai704.TP1.CabinetVeterinaireClient.GUI.trash.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="CabinetVeterinaire_Client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="CabinetVeterinaire Common" />
       <method v="2">
@@ -111,6 +149,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.DropdownExample" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -122,11 +166,38 @@
       <updated>1697410949765</updated>
       <workItem from="1697410952016" duration="2973000" />
       <workItem from="1697453118715" duration="2333000" />
+      <workItem from="1697495781475" duration="74000" />
+      <workItem from="1697495873923" duration="599000" />
+      <workItem from="1697496676925" duration="1129000" />
+      <workItem from="1697499649447" duration="27491000" />
+      <workItem from="1697980115139" duration="10203000" />
+      <workItem from="1698139157665" duration="10337000" />
+      <workItem from="1699100638752" duration="4257000" />
+      <workItem from="1699550871096" duration="16920000" />
+      <workItem from="1700001118476" duration="85956000" />
+      <workItem from="1700913055846" duration="2301000" />
+      <workItem from="1701288233695" duration="3181000" />
+      <workItem from="1704939692394" duration="49000" />
+      <workItem from="1706823683374" duration="20539000" />
+      <workItem from="1706849356257" duration="13858000" />
+      <workItem from="1706961911066" duration="48532000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="SHOW_OTHER_BRANCHES" value="true" />
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -138,5 +209,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArithmeticException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

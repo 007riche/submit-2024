@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="CabinetVeterinaireServeur:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/CabinetVeterinaireServeur_jar</output-path>
-    <root id="archive" name="CabinetVeterinaire Serveur.jar">
-      <element id="module-output" name="CabinetVeterinaire Serveur" />
-    </root>
-  </artifact>
-</component>
