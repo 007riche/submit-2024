@@ -1,0 +1,17 @@
+(* Q1 *)
+Inductive is_fact : nat -> nat -> Prop :=
+  | is_fact_0 : is_fact 0 1
+  | is_fact_S : forall s n : nat, 
+    is_fact s n -> is_fact (S n) (s * (S n)).
+
+Print is_fact_ind.
+
+(*Q2 *)
+Fixpoint fact (n : nat) : nat :=
+match n with
+  | 0 => 1
+  | (S n) => (fact n) * (S n)
+end.
+
+
+  

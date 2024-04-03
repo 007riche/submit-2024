@@ -1,0 +1,55 @@
+Fixpoint mult (n m: nat) {struct n} : nat :=
+match n with 
+  | 0 => 0
+  | (S p) => (plus (mult p m) m)
+end.
+
+Compute ((mult 2 3)).
+
+Goal forall n : nat, (mult 2 n) = (plus n n).
+Proof.
+  intro.
+  simpl.
+  reflexivity.
+Qed.
+
+
+Lemma lem1: forall n : nat, (plus n 2) = S (S n).
+Proof.
+  induction n.
+  simpl.
+  reflexivity.
+  rewrite <- IHn.
+  reflexivity.
+Qed.
+
+Lemma lem2: forall n m, (plus n (S m)) = S (plus n m).
+Proof.
+  induction n.
+  intro.
+  simpl.
+  reflexivity.
+  intro.
+  simpl.
+  rewrite IHn.
+  reflexivity.
+Qed.
+  
+
+Goal forall n : nat, (mult n 2) = (plus n n).
+Proof.
+  induction n.
+  simpl.
+  reflexivity.
+  simpl.
+  rewrite IHn.
+  rewrite lem1.
+  rewrite lem2.
+  reflexivity.
+Qed.
+  
+  
+  
+  
+
+

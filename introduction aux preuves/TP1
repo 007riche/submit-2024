@@ -1,0 +1,42 @@
+(*exercice 1*)
+(*1*)
+Parameter A B : Prop.
+Goal A -> B -> A.
+intros.
+assumption.
+Qed.
+
+(*2*)
+Parameter C : Prop.
+Goal (A->B->C)->(A->B)->A->C.
+intros.
+apply H.
+assumption.
+apply H0.
+assumption.
+Qed.
+
+(*3*)
+Goal A /\ B -> B.
+intro.
+elim H.
+intros.
+assumption.
+Qed.
+
+(*4*)
+Goal B -> A \/ B.
+intro.
+right.
+assumption.
+Qed.
+
+(*5*)
+Goal (A\/B)->(A->C)->(B->C)->C.
+intros.
+apply H0.
+elim H.
+intros.
+assumption.
+intro.
+
