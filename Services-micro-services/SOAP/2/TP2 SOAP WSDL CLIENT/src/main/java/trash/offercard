@@ -1,0 +1,114 @@
+
+//            throw new RuntimeException(e);
+
+
+
+//		JPanel roomImgPanel = new JPanel();
+////		roomImgPanel.setLayout(null);
+//		roomImgPanel.setBounds(0, 0, 200, 150);
+////		innerPanel.
+//				add(roomImgPanel);
+
+//            throw new RuntimeException(e);
+
+
+//					throw new RuntimeException(e);
+//		roomImgPanel.
+
+//		JPanel roomFromPanel = new JPanel();
+////		roomFromPanel.setLayout(null);
+//		roomFromPanel.setBounds(0, 150, 200, 35);
+////		innerPanel.
+//				add(roomFromPanel);
+//		roomFromPanel.
+
+
+//		JPanel roomToPanel = new JPanel();
+//		roomToPanel.setLayout(null);
+//		roomToPanel.setBounds(0, 170, 200, 20);
+////		innerPanel.
+//				add(roomToPanel);
+
+roomToPanel.
+
+
+
+//		JPanel roomPricePanel = new JPanel();
+//		roomPricePanel.setLayout(null);
+//		roomPricePanel.setBounds(0, 200, 200, 30);
+////		innerPanel.
+//				add(roomPricePanel);
+
+				//		roomPricePanel.
+
+
+
+//		JPanel bookOfferButtonPanel = new JPanel();
+//		bookOfferButtonPanel.setLayout(null);
+//		bookOfferButtonPanel.setForeground(theme.getWhite());
+//		bookOfferButtonPanel.setBackground(theme.getBlack());
+//		bookOfferButtonPanel.setBounds(0, 225, 200, 22);
+////		innerPanel.
+//				add(bookOfferButtonPanel);
+
+//		bookOfferButtonPanel.
+
+
+//
+//	@Override
+//	public int getX() {
+//		return X;
+//	}
+//
+//	public void setX(int x) {
+//		X = x;
+//	}
+//
+//	@Override
+//	public int getY() {
+//		return Y;
+//	}
+//
+//	public void setY(int y) {
+//		Y = y;
+//	}
+//
+//	@Override
+//	public int getWidth() {
+//		return Width;
+//	}
+//
+//	public void setWidth(int width) {
+//		Width = width;
+//	}
+//
+//	@Override
+//	public int getHeight() {
+//		return Height;
+//	}
+//
+//	public void setHeight(int height) {
+//		Height = height;
+//	}
+
+
+
+//		JPanel innerPanel = new JPanel();
+//		innerPanel.setBounds(0, 0, 200, 250);
+////		innerPanel.setLayout(null);
+//		innerPanel.setBorder(new LineBorder(theme.getBlack(), 1, true));
+//		innerPanel.setForeground(theme.getWhite());
+//		innerPanel.setBackground(theme.getBlack());
+//		innerPanel.setDoubleBuffered(true);
+//		add(innerPanel);
+
+// Load image
+//		BufferedImage myPictureBuffer = null;
+//
+//		try {
+//			System.out.println("Image url: "+ this.currentRoom.getImgUrl());
+//			URL roomImgUrl = new URL(this.currentRoom.getImgUrl());
+//			myPictureBuffer = ImageIO.read(roomImgUrl);
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}

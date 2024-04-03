@@ -1,0 +1,114 @@
+
+	public HotelExpandedSingleCard() throws IOException {
+//	JPanel hotelCard1 = new JPanel();
+		setLayout(null);
+		setPreferredSize(new Dimension(700, 250));
+		setBackground(theme.getBlack());
+//	resultHotelAvailabilityGridPanel.add(hotelCard1);
+
+		JPanel innerHotelCard = new JPanel();
+		innerHotelCard.setLayout(null);
+		innerHotelCard.setBorder(new LineBorder(new Color(0, 0, 0), 3, true));
+		innerHotelCard.setBackground(Color.WHITE);
+		innerHotelCard.setBounds(0, 25, 697, 200);
+		add(innerHotelCard);
+
+		JPanel imgPanel = new JPanel();
+		imgPanel.setLayout(null);
+		imgPanel.setBackground(Color.WHITE);
+		imgPanel.setBounds(15, 3, 200, 192);
+		innerHotelCard.add(imgPanel);
+
+
+		// "C:\\Users\\richard\\my-eclipse-workspace\\Agence\\src\\resources\\img\\hotel.jpg"
+		// new File(fileLoader.getResource("img/hotel.jpg").getFile()).getPath()
+		InputStream inputStream = getClass().getClassLoader().getResourceAsStream("img/hotel.jpg");
+		JButton imgButton = new JButton(new ImageIcon(ImageIO.read(inputStream)));
+		imgButton.setBounds(3, 7, 180, 180);
+		imgPanel.add(imgButton);
+
+		JPanel hotelNamePanel = new JPanel();
+		hotelNamePanel.setLayout(null);
+		hotelNamePanel.setBorder(new LineBorder(new Color(0, 0, 0)));
+		hotelNamePanel.setBackground(Color.WHITE);
+		hotelNamePanel.setBounds(215, 3, 476, 36);
+		innerHotelCard.add(hotelNamePanel);
+
+		JTextPane hotelNameTextPane = new JTextPane();
+		hotelNameTextPane.setText("Hotel Savoie Blanc");
+		hotelNameTextPane.setFont(new Font("Liberation Serif", Font.BOLD | Font.ITALIC, 20));
+		hotelNameTextPane.setEditable(false);
+		hotelNameTextPane.setBounds(2, 4, 470, 30);
+		hotelNamePanel.add(hotelNameTextPane);
+
+		JPanel starsPanel = new JPanel();
+		starsPanel.setLayout(null);
+		starsPanel.setBorder(new LineBorder(new Color(0, 0, 0), 1, true));
+		starsPanel.setBackground(Color.WHITE);
+		starsPanel.setBounds(215, 40, 476, 40);
+		innerHotelCard.add(starsPanel);
+
+		JTextPane starsTextPane = new JTextPane();
+		starsTextPane.setText("★★★★☆");
+		starsTextPane.setForeground(new Color(229, 165, 10));
+		starsTextPane.setFont(new Font("Dialog", Font.BOLD, 24));
+		starsTextPane.setEditable(false);
+		starsTextPane.setBounds(2, 0, 450, 30);
+		starsPanel.add(starsTextPane);
+
+		JPanel consultAvailabiltyButtonPanel = new JPanel();
+		consultAvailabiltyButtonPanel.setLayout(null);
+		consultAvailabiltyButtonPanel.setBackground(Color.WHITE);
+		consultAvailabiltyButtonPanel.setBounds(215, 173, 476, 22);
+		innerHotelCard.add(consultAvailabiltyButtonPanel);
+
+		JButton consultAvailabilityButton = new JButton("Voir les disponibilités >");
+		consultAvailabilityButton.setForeground(new Color(246, 245, 244));
+		consultAvailabilityButton.setBackground(new Color(26, 95, 180));
+		consultAvailabilityButton.setBounds(0, 0, 482, 25);
+		consultAvailabilityButton.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+
+			}
+		});
+		consultAvailabilityButton.addActionListener(null);
+
+		consultAvailabiltyButtonPanel.add(consultAvailabilityButton);
+
+		JPanel previewAvailabilityPanel = new JPanel();
+		previewAvailabilityPanel.setLayout(null);
+		previewAvailabilityPanel.setBorder(new LineBorder(new Color(0, 0, 0), 1, true));
+		previewAvailabilityPanel.setBackground(Color.WHITE);
+		previewAvailabilityPanel.setBounds(215, 80, 476, 92);
+		innerHotelCard.add(previewAvailabilityPanel);
+
+		JTextPane addresTextPane = new JTextPane();
+		addresTextPane.setText("Adresse:\nGPS:");
+		addresTextPane.setEditable(false);
+		addresTextPane.setBounds(2, 12, 241, 71);
+		previewAvailabilityPanel.add(addresTextPane);
+
+		JTextPane availabilityPreviewTextPane = new JTextPane();
+		availabilityPreviewTextPane.setText("A partie de :\n2 lits\n");
+		availabilityPreviewTextPane.setEditable(false);
+		availabilityPreviewTextPane.setBounds(241, 12, 225, 71);
+		previewAvailabilityPanel.add(availabilityPreviewTextPane);
+
+}
+
+
+//			, ClassLoader fileLoader
+
+//		this.imgUrl = imgUrl;
+//		this.hotelName = hotelName;
+//		this.hotelAdresse = hotelAdresse;
+//		this.stars = stars;
+//		this.priceMin = priceMin;
+//		this.fileLoader = fileLoader;
+
+
+
+		// "C:\\Users\\richard\\my-eclipse-workspace\\Agence\\src\\resources\\img\\hotel.jpg"
+		// new File(fileLoader.getResource("img/hotel.jpg").getFile()).getPath()
+//		InputStream inputStream = getClass().getClassLoader().getResourceAsStream("img/hotel.jpg");

@@ -1,0 +1,27 @@
+
+// server
+grant codeBase "file:${}/target/*" {
+permission java.io.FilePermission "", "read";
+}
+
+
+// common
+grant codeBase "file:${C:\Users\richard\Documents\Master 1 20232024\HAI704\RMI\TP1\CabinetVeterinaire Serveur\target\CabinetVeterinaireServeur-1.0-SNAPSHOT.jar}/target/*" {
+permission java.io.FilePermission "", "read";
+}
+
+
+  permission java.util.PropertyPermission "java.security.policy", "write";
+    permission	java.net.SocketPermission “*:1024-65535”,”connect,accept”;
+    permission	java.net.SocketPermission “*:1024-65535”,”accept,resolve”;
+    permission	java.net.SocketPermission “:80”,”connect”;
+    permission	java.security.AllPermission;
+
+
+
+        permission java.util.PropertyPermission "java.security.policy", "write";
+             permission java.net.SocketPermission "192.168.56.1:*", "accept,resolve";
+              permission	java.net.SocketPermission "*:1024-65535","connect,accept";
+             permission	java.net.SocketPermission "*:1024-65535","accept,resolve";
+             permission	java.net.SocketPermission ":80","connect";
+             permission	java.security.AllPermission;

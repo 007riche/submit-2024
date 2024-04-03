@@ -1,0 +1,63 @@
+//        LocaleListCompat localeListCompat = ConfigurationCompat.getLocales(Resources.getSystem().getConfiguration());
+//        for (int i=0; i < localeListCompat.size(); i++) {
+//            System.out.println("LANGUE CHARGEE DISPO: "+localeListCompat.get(i).getLanguage());
+//        }
+
+
+// Retrieving initial settings
+//        languageSwitch = findViewById(R.id.switchLanguage);
+//        languageSwitchState = languageSwitch.isChecked();
+//        defaulLanguage = Locale.getDefault().getLanguage();
+//        currentLanguage = defaulLanguage;
+////        System.out.println("LA LANGUE PAR DEFAUT EST: "+defaulLanguage);
+//        languageSwitchState = getIntent().getBooleanExtra("switchState", languageSwitchState) ? getIntent().getBooleanExtra("switchState", languageSwitchState) : getIntent().getBooleanExtra("switchState", false);
+//        languageSwitch.setChecked(languageSwitchState);
+////        languageSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//                if(isChecked) {
+//                    if(defaulLanguage.contentEquals("fr")) {
+//                        setLocale("en");
+//                        currentLanguage = "en";
+//
+//                    } else {
+//                        setLocale("fr");
+//                        currentLanguage = "en";
+//                    }
+//
+//                }
+//                else  {
+//                    setLocale(defaulLanguage);
+//                    currentLanguage = defaulLanguage;
+//                }
+////                recreate();
+//                Intent intent = getIntent();
+//                intent.putExtra("switchstate",isChecked);
+//                finish();
+//                startActivity(intent);
+//
+////                System.out.println("LANGUE ACTUELLE: "+currentLanguage);
+////                languageSwitch = findViewById(R.id.switchLanguage);
+////                languageSwitch.setChecked(true);
+////                languageSwitch.setText(R.string.back_to_default_language);
+//            }
+//        });
+
+
+
+ // Method to change the system language
+//    private void setLocale(String languageCode) {
+//        Locale locale = new Locale(languageCode);
+//        Configuration config = getBaseContext().getResources().getConfiguration();
+//        config.setLocale(locale);
+//        getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+//    }
+
+//    private boolean checkLanguageAvailability(LocaleListCompat localeListCompat, String lang) {
+//        for (int i=0; i < localeListCompat.size(); i++) {
+////            System.out.println("LANGUE CHARGEE DISPO: "+localeListCompat.get(i).getLanguage());
+//           if (localeListCompat.get(i).getLanguage().contentEquals(lang))
+//               return true;
+//        }
+//        return false;
+//    }

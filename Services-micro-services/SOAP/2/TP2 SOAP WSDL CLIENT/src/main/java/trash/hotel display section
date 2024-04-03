@@ -1,0 +1,70 @@
+
+//    @Override
+//    public int getX() {
+//        return X;
+//    }
+//
+//    public void setX(int x) {
+//        X = x;
+//    }
+//
+//    @Override
+//    public int getY() {
+//        return Y;
+//    }
+//
+//    public void setY(int y) {
+//        Y = y;
+//    }
+//
+//    @Override
+//    public int getWidth() {
+//        return Width;
+//    }
+//
+//    public void setWidth(int width) {
+//        Width = width;
+//    }
+//
+//    @Override
+//    public int getHeight() {
+//        return Height;
+//    }
+//
+//    public void setHeight(int height) {
+//        Height = height;
+//    }
+
+  GridLayout gl_resultHotelAvailabilityGridPanel = new GridLayout();
+//        gl_resultHotelAvailabilityGridPanel.setColumns(1);
+//        gl_resultHotelAvailabilityGridPanel.setRows(-1);
+//        gl_resultHotelAvailabilityGridPanel.setVgap(5);
+//        setLayout(gl_resultHotelAvailabilityGridPanel);
+//        ((ScrollablePanel) getParent()).setViewportView(this);
+
+
+//        setBounds(getX(), getY(), getWidth(), getHeight());
+
+
+//        removeAllSubComponents(this);
+//        setLayout(null);
+//        initializeComponent();
+
+//        removeAllSubComponents(this);
+   public static void removeAllSubComponents(Container container) {
+        // Get all subcomponents
+        Component[] components = container.getComponents();
+
+        // Remove each component from the container
+        for (Component component : components) {
+            if(component instanceof OfferRoomCard)
+            {
+                container.remove(component);
+            }
+        }
+        container.revalidate();
+        container.repaint();
+    }
+
+     setPreferredSize(new Dimension(765, 275*size*10));
+    //        setBounds(15, 0,725, 275*size*10);

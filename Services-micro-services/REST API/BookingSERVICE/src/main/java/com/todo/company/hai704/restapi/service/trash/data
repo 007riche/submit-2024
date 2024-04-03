@@ -1,0 +1,296 @@
+spring.datasource.db2.mysql.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.db1.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+spring.jpa.db1.hibernate.ddl-auto=update
+spring.jpa.db2.hibernate.ddl-auto=update
+spring.datasource.db1.mysql.username=restapi
+spring.datasource.db1.h2.url=jdbc:h2:mem:publisedrestservices
+spring.datasource.db1.mysql.password=password
+spring.datasource.db2.h2.url=jdbc:h2:mem:eurocielmontpellier_db
+spring.datasource.db1.mysql.url=jdbc:mysql://localhost:3306/publisedrestservices
+spring.datasource.db1.mysql.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.db1.h2.driver-class-name=org.h2.Driver
+spring.datasource.db2.h2.username=restapi
+spring.datasource.db2.mysql.username=restapi
+spring.datasource.db1.h2.username=restapi
+spring.h2.console.enabled=true
+spring.jpa.db2.show-sql=true
+spring.datasource.db2.mysql.url=jdbc:mysql://localhost:3306/eurocielmontpellier_db
+spring.jpa.db2.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+spring.datasource.db2.h2.password=password
+spring.datasource.db1.h2.password=password
+spring.datasource.db2.h2.driver-class-name=org.h2.Driver
+spring.jpa.db1.show-sql=true
+spring.datasource.db2.mysql.password=password
+
+
+
+
+        for (int index = 1; index <= this.sourcesProperties.size() ; index++) {
+            DatabaseConfigurationProperties prop = sourcesProperties.get(index-1);
+            prop.setHostedProtocolURLEndingWithPortNumber(
+                    ensurePortNumberOrSingleEndingSlash(prop.getHostedProtocolURLEndingWithPortNumber().trim()));
+
+            // MySql data source
+            if (index != 1 ) newAppDataSourcesProperties.setProperty("spring.datasource.db"+index+".mysql.url",
+                    prop.getHostedProtocolURLEndingWithPortNumber()
+                            +prop.getDBName()
+                            .trim().toLowerCase()
+                            .replaceAll("[/\\s]+$", "")
+                            );
+            else {
+                if (prop.getHostedProtocolURLEndingWithPortNumber().endsWith("/")) {
+                    prop.setHostedProtocolURLEndingWithPortNumber(
+                            prop.getHostedProtocolURLEndingWithPortNumber().substring(0,prop.getHostedProtocolURLEndingWithPortNumber().lastIndexOf("/"))
+                    );
+                }
+                                                                                        /*.mysql*/
+                newAppDataSourcesProperties.setProperty("spring.datasource.db"+index+".mysql.url", prop.getHostedProtocolURLEndingWithPortNumber());
+            }
+
+            newAppDataSourcesProperties.setProperty("spring.datasource.db"+index+".mysql.username",
+                    prop.getUsername());
+            newAppDataSourcesProperties.setProperty("spring.datasource.db"+index+".mysql.password",
+                    prop.getPassword());
+            if (prop.getDriverClassName()==null || prop.getDriverClassName().isEmpty()) { //  || !prop.getDriverClassName().isEmpty()
+                newAppDataSourcesProperties.setProperty("spring.datasource.db"+index+".mysql.driver-class-name",
+                                                                                    "com.mysql.cj.jdbc.Driver");
+            }
+
+            // Releated JPA
+            newAppDataSourcesProperties.setProperty("spring.jpa.db"+index+".hibernate.ddl-auto", "update");
+            newAppDataSourcesProperties.setProperty("spring.jpa.db"+index+".show-sql", "true");
+            newAppDataSourcesProperties.setProperty("spring.jpa.db"+index+".hibernate.dialect" /*database-platform*/,
+                                                                        "org.hibernate.dialect.MySQL8Dialect");
+            // Related H2
+            if (index != 1)
+            {
+                newAppDataSourcesProperties.setProperty("spring.datasource.db"+(index+2)+".h2.url",
+                        "jdbc:h2:mem:" +prop.getDBName()
+                                .trim().toLowerCase()
+                                .replaceAll("[/\\s]+$", ""));
+            }
+
+            else
+            {
+                newAppDataSourcesProperties.setProperty("spring.datasource.db"+(index+2)+".h2.url",
+                        "jdbc:h2:mem:" +prop.getDBName());
+            }
+
+            newAppDataSourcesProperties.setProperty("spring.jpa.db"+(index+2)+".hibernate.ddl-auto", "update");
+            newAppDataSourcesProperties.setProperty("spring.jpa.db"+(index+2)+".show-sql", "true");
+            newAppDataSourcesProperties.setProperty("spring.jpa.db"+(index+2)+".database-platform" /*hibernate.dialect*/,
+                    "org.hibernate.dialect.H2Dialect");
+
+            newAppDataSourcesProperties.setProperty("spring.datasource.db"+(index+2)+".h2.username",
+                    prop.getUsername());
+            newAppDataSourcesProperties.setProperty("spring.datasource.db"+(index+2)+".h2.password",
+                    prop.getPassword());
+            newAppDataSourcesProperties.setProperty("spring.datasource.db"+(index+2)+".h2.driver-class-name",
+                    "org.h2.Driver");
+        }
+
+        newAppDataSourcesProperties.setProperty("spring.h2.console.enabled",
+                "true");
+        newAppDataSourcesProperties.setProperty("spring.main.allow-bean-definition-overriding",
+                "true");
+
+
+
+//    @Autowired
+//    protected DataSourcesInitialization(ConfigurableEnvironment environment, DatabaseConfigurationProperties sourcesProperties) {
+//        this.environment = environment;
+//        this.sourcesProperties = sourcesProperties;
+//        this.fileurl = DataSourcesInitialization.class.getResource(propertiesBackUpFile);
+//        resPath = getResourcesPath();
+//        System.err.println("resPath in datainitialization:"+resPath);
+//        if (this.fileurl == null && (this.sourcesProperties == null)) {
+////            backupService.backupConfigurationToFile(resPath+runningApplicationPropertiesFile,
+////                    resPath+runningApplicationPropertiesFile);
+//        } else {
+////            createDatabases();
+//            updateDataSourceProperties();
+//        }
+//    }
+//
+//    @Bean(name = "DatabaseConfigurationProperties")
+//    public static DataSourcesInitialization createDataSourcesInitialization(ConfigurableEnvironment environment,
+//                                                                            DatabaseConfigurationProperties sourcesProperties) {
+//        System.err.println("Created @Bean: compleleteProperties");
+//        return new DataSourcesInitialization(environment, sourcesProperties);
+//    }
+
+ private void createDatabases() {
+//        for (DatabaseConfigurationProperties prop: this.sourcesProperties) {
+//            createOneNewSQLDataBase(prop);
+//        }
+
+    }
+
+    private boolean createOneNewSQLDataBase(DatabaseConfigurationProperties prop) {
+        String db_name = prop.getDBName().trim().toLowerCase().
+                replaceAll("[/\\s]+$", "") ;
+
+        String dbHostUrl = ensurePortNumberOrSingleEndingSlash(prop.getHostedProtocolURLEndingWithPortNumber().trim());
+        String sqlCreateServicesDB = "CREATE DATABASE IF NOT EXISTS "+db_name+";";
+
+        try {
+            Connection conn = DriverManager.getConnection(dbHostUrl, prop.getUsername(), prop.getPassword() );
+            PreparedStatement stmt = conn.prepareStatement(sqlCreateServicesDB);
+            stmt.execute();
+            conn.close();
+            return true;
+        } catch (SQLException e) {
+            return false;
+        }
+    }
+
+// Node DB
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Base de donnees du noeud Service <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
+        do {
+            conn=null;
+            jdbcUrl="";
+            username="";
+            password="";
+            System.out.println("Le choix vous est laisse' de creer une base de donnees mysql avec un utilisateur qui a tous les droits sur celle-ci pour les operations requises");
+            do {
+                System.out.println("URL de la base de donnee (comportant le nom de la base de donnees, donc port inclus):");
+                jdbcUrl = sc.nextLine();
+                jdbcUrl=jdbcUrl.trim();
+            }while (!matchMysqlJdbcUrlWithoutDBName(jdbcUrl) && !matchMysqlJdbcUrlWithDBName(jdbcUrl));
+
+            if (matchMysqlJdbcUrlWithDBName(jdbcUrl)) {
+                int indexSlachBeforeDBName = jdbcUrl.lastIndexOf("/");
+                if (indexSlachBeforeDBName != -1) {
+                    String dbname = jdbcUrl.substring(indexSlachBeforeDBName+1);
+                    nodeDB.setHostedProtocolURLEndingWithPortNumber(jdbcUrl.substring(0, jdbcUrl.lastIndexOf("/")+1));
+                    nodeDB.setDBName(dbname);
+                }
+            } else {
+                nodeDB.setHostedProtocolURLEndingWithPortNumber(jdbcUrl);
+                nodeDB.setDBName(localHotel.getHOTEL_DOMAIN().toLowerCase());
+            }
+
+
+            do {
+                System.out.println("Nom de l'utilisateur de la base de donnees (evitez les noms commencants ou terminant par des espaces):");
+                username = sc.nextLine();
+            } while (username.trim().isBlank());
+            nodeDB.setUsername(username);
+
+            do {
+                System.out.println("Mot de passe(idealement evitez aussi les espaces au debut et a la fin):");
+                password =sc.nextLine();
+            } while (password.trim().isBlank());
+            nodeDB.setPassword(password);
+
+
+            try {
+                conn = DriverManager.getConnection(jdbcUrl, nodeDB.getUsername(), nodeDB.getPassword());
+            } catch (SQLException e) {
+                if (matchMysqlJdbcUrlWithDBName(jdbcUrl)) System.err.println("Impossible de se connecter a la base de donnee du noeud service avec les infos fournies");
+                else System.err.println("Impossible de se connecter a l'hote de la base de donnee du noeud service avec les infos fournies");
+                System.err.println("URL: "+ jdbcUrl);
+                System.err.println("Utilisateur: "+ nodeDB.getUsername());
+                System.err.println("mot de passe: "+nodeDB.getPassword());
+            }
+        } while (conn == null);
+        System.out.println("informations correctes, Connection"+conn);
+
+
+        //    public List<Booking> getHotleBooking() {
+        //        return hotleBooking;
+        //    }
+
+        //    public void setHotleBooking(List<Booking> hotleBooking) {
+        //        this.hotleBooking = hotleBooking;
+        //    }
+
+        //    public void addToTemporaryRequestOffer(HashMap<String, Offer> stampedOffer) {
+        //        this.temporaryRequestOffer.add(stampedOffer) ;
+        //    }
+
+        //    public List<HashMap<String, Offer>> getTemporaryRequestOffer() {
+        //        return temporaryRequestOffer;
+        //    }
+
+        //    public List<Partnership> getHotelPartnership() {
+        //        return hotelPartnership;
+        //    }
+
+        //    public void setHotelPartnership(List<Partnership> hotelPartnership) {
+        //        this.hotelPartnership = hotelPartnership;
+        //    }
+
+
+//    @Transient
+//  public   List<Room> allRoom = new ArrayList<Room>();
+
+
+//    @Transient
+//    List<Booking> bookings = new ArrayList<Booking>();
+//    @Transient
+//    public  List<Room> availalbleRooms = new ArrayList<Room>();
+
+//    public void setTemporaryRequestOffer(List<HashMap<String, Offer>> temporaryRequestOffer) {
+//        this.temporaryRequestOffer = temporaryRequestOffer;
+//    }
+
+//    public List<Room> getAllRoom() {
+//        return this.allRoom;
+//    }
+
+
+
+//    public List<Room> getHotelRooms() {
+//        return hotelRooms;
+//    }
+
+//    public void setHotelRooms(List<Room> hotelRooms) {
+//        this.hotelRooms = hotelRooms;
+//    }
+
+
+
+//    @OneToMany(mappedBy = "runningNode", cascade = CascadeType.ALL)
+//    private List<Room> hotelRooms;
+//    @OneToMany(mappedBy = "runningNode", cascade = CascadeType.ALL)
+//    private  List<Booking> hotleBooking;
+//    @OneToMany(mappedBy = "runningNode", cascade = CascadeType.ALL)
+//    private List<Partnership> hotelPartnership;
+
+//    @Transient
+//    private List<HashMap<String, Offer>> temporaryRequestOffer;
+
+
+
+//        try {
+//            File file = new File(classLoader.getResource(pathTest).toURI());
+//            String dirPath = file.getAbsolutePath();
+//            System.out.println("Dir path: "+ dirPath);
+//            String pathedIMG =dirPath+"/"+imgName+".jpg";
+//            System.err.println("Pathed file: "+pathedIMG);
+//
+//            File newFile = new File(pathedIMG);
+//
+//            Image retrievedImg = persistanceService.findImageByImgName(imgName);
+//
+//            byte barr[] = retrievedImg.getImg();
+//            FileOutputStream fileOutputStream = null;
+//            fileOutputStream = new FileOutputStream(newFile);
+//            fileOutputStream.write(barr);
+//            fileOutputStream.close();
+//            URI fileUri = newFile.toURI();
+//
+//            URL fileUrl = fileUri.toURL();
+//            retURL = fileUrl;
+//        } catch (IOException e) {
+//        } catch (URISyntaxException e) {
+//        }
+
+
+
+
+
+
+
+

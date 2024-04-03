@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TP 1</string>
+    <string name="form_title">Availability</string>
+    <string name="departure_label">Departure city:</string>
+    <string name="arrival_label">Arrival city:</string>
+    <string name="search_button_label">Browse Availables slots ></string>
+    <string name="departure_hint">Ex: London...</string>
+    <string name="arrival_hint">Ex: SouthSamton</string>
+    <string name="back">Go Back</string>
+    <string name="from_label">From:</string>
+    <string name="to_label">To:</string>
+    <string name="at_label">At:</string>
+    <string name="event_label">EVENTS</string>
+</resources>

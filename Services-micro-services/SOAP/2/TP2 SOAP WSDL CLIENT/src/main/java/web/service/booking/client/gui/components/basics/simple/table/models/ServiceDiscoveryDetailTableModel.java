@@ -1,0 +1,63 @@
+package web.service.booking.client.gui.components.basics.simple.table.models;
+
+import web.service.booking.client.models.Service;
+
+import javax.swing.table.AbstractTableModel;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ServiceDiscoveryDetailTableModel extends AbstractTableModel {
+
+    private List<Service> services=new ArrayList<>();
+
+    	private  String[] columnNames = {
+                "Hotel Name",
+                "Login",
+                "Password",
+                "Booking URL",
+                "Browsing URL",
+                "Partnership URL"
+    };
+
+    boolean[] columnEditables = new boolean[] {
+            false,
+            true,
+            true,
+            false,
+            false,
+            false,
+    };
+
+    public ServiceDiscoveryDetailTableModel(List<Service> services) {
+        this.services = services;
+
+    }
+
+    @Override
+    public int getRowCount() {
+        return services.size() ;
+    }
+
+    @Override
+    public int getColumnCount() {
+        return columnNames.length;
+    }
+
+    @Override
+    public boolean isCellEditable(int rowIndex, int columnIndex) {
+        return columnEditables[rowIndex];
+    }
+
+
+    @Override
+    public String  getValueAt(int rowIndex,
+                              int columnIndex) {
+        Service service= services.get(rowIndex);
+        return switch (columnIndex) {
+            case 1 -> service.getLoginId();
+            case 2 -> service.getPassword();
+            default -> null;
+        };
+
+    }
+}

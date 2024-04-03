@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TP 1</string>
+    <string name="form_title">Formulaire</string>
+    <string name="lastNamePromptTextViewText">Nom:</string>
+    <string name="lastNameEditTextHintText">Ex: Dupont</string>
+    <string name="firstNamePromptTextViewText">Prénom:</string>
+    <string name="firstNameEditTextHintText">Ex: Jean</string>
+    <string name="agePromptTextViewText">Age:</string>
+    <string name="ageEditTextNumberText">18, Entre 1 - 99</string>
+    <string name="genderPromptTextViewHintText">Sélectionnez votre sexe:</string>
+    <string name="femaleRadioButtonLabel">Féminin</string>
+    <string name="maleRadioButtonLabel">Masculin</string>
+    <string name="domainPromptTextViewText">Domain d\'activité:</string>
+    <string name="phoneNumberPromptTextViewText">Numéro de téléphone:</string>
+    <string name="editTextPhoneNumberHintText">07 07 07 07 07</string>
+    <string name="submitButtonText">Soumettre</string>
+    <string name="change_language">Basculer en Anglais:</string>
+    <string-array name="competency_domain">
+        <item>Banques et finances</item>
+        <item>Education</item>
+        <item>Gestion</item>
+        <item>infrastructures</item>
+        <item>Ingéniere</item>
+        <item>Informatique</item>
+        <item>Médical</item>
+        <item>Transports</item>
+        <item>Autres</item>
+    </string-array>
+    <string name="back_to_default_language">Switch back to French:</string>
+    <string name="alert_dialog_confirm_submission_title">Soumission</string>
+    <string name="alert_dialog_confirm_submission_yes_option">Oui</string>
+    <string name="alert_dialog_confirm_submission_cancel">Annuler</string>
+    <string name="alert_dialog_confirm_submission_message">Confirmez-vous l\'exactitude des informations saisies?</string>
+    <string name="data_display_title">Données</string>
+    <string name="gender_male">Masculin</string>
+    <string name="gender_female">Féminin</string>
+    <string name="gender_label">Genre:</string>
+    <string name="alert_dialog_confirm_submission_ok_option">OK</string>
+    <string name="alert_dialog_confirm_submission_back_option">Retour</string>
+    <string name="phone_call_label">Appeler</string>
+</resources>

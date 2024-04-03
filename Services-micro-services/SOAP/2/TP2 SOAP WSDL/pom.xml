@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.tp2soapwsdl</groupId>
+    <artifactId>TP2-SOAP-WSDL</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>TP2-SOAP-WSDL</name>
+    <packaging>jar</packaging>
+    <properties>
+        <!--        <maven.compiler.source>17</maven.compiler.source>-->
+        <!--        <maven.compiler.target>17</maven.compiler.target>-->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/jakarta.xml.ws/jakarta.xml.ws-api -->
+
+        <dependency>
+            <groupId>com.sun.xml.ws</groupId>
+            <artifactId>jaxws-tools</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+
+        <!-- https://search.maven.org/remotecontent?filepath=mysql/mysql-connector-java/8.0.31/mysql-connector-java-8.0.31.jar -->
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.31</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20220924</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+
+        <plugins>
+
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+<!--                <version>3.3.0</version>-->
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass>web.service.booking.server.PubliserServer</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>
+
+
+
+
+
+<!--<dependency>-->
+<!--<groupId>mysql</groupId>-->
+<!--<artifactId>mysql-connector-java</artifactId>-->
+<!--<version>8.0.31</version>-->
+<!--<scope>compile</scope>-->
+<!--</dependency>-->
+
+
+
+<!--<plugins>-->
+<!--<plugin>-->
+<!--    <groupId>org.apache.maven.plugins</groupId>-->
+<!--    <artifactId>maven-jar-plugin</artifactId>-->
+<!--    <version>3.2.0</version>-->
+<!--    <configuration>-->
+<!--        <archive>-->
+<!--            <manifest>-->
+<!--                <mainClass>web.service.booking.server.PubliserServer</mainClass>-->
+<!--            </manifest>-->
+<!--        </archive>-->
+<!--    </configuration>-->
+<!--    <executions>-->
+<!--        <execution>-->
+<!--            <id>copy-dependencies</id>-->
+<!--            <phase>package</phase>-->
+<!--            <goals>-->
+<!--                <goal>copy-dependencies</goal>-->
+<!--            </goals>-->
+<!--            <configuration>-->
+<!--                <outputDirectory>${project.build.directory}/lib</outputDirectory>-->
+<!--                <includeScope>runtime</includeScope>-->
+<!--                <includeArtifactIds>mysql-connector-java</includeArtifactIds>-->
+<!--            </configuration>-->
+<!--        </execution>-->
+<!--    </executions>-->
+<!--</plugin>-->
+<!--</plugins>-->
+
+
+<!--<goals>-->
+<!--<goal>co</goal>-->
+<!--</goals>-->
+<!--<artifactId>maven-war-plugin</artifactId>-->
+<!--<version>3.3.2</version>-->
+        <!--        <dependency>-->
+        <!--            <groupId>jakarta.xml.soap</groupId>-->
+        <!--            <artifactId>jakarta.xml.soap-api</artifactId>-->
+        <!--            <version>3.0.0</version>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.jboss.spec.jakarta.xml.ws</groupId>-->
+        <!--            <artifactId>jboss-jakarta-xml-ws-api_4.0_spec</artifactId>-->
+        <!--            <version>1.0.0.Final</version>-->
+        <!--            <scope>import</scope>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.jboss.spec.jakarta.xml.ws</groupId>-->
+        <!--            <artifactId>jboss-jakarta-xml-ws-api_3.0_spec</artifactId>-->
+        <!--            <version>1.0.1.Final</version>-->
+        <!--            <scope>compile</scope>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>jakarta.xml.ws</groupId>-->
+        <!--            <artifactId>jakarta.xml.ws-api</artifactId>-->
+        <!--            <version>4.0.0</version>-->
+        <!--        </dependency>-->
+
+
+
+        <!--        <resources>-->
+        <!--            <resource>-->
+        <!--                <directory>src/main/resources</directory>-->
+        <!--            </resource>-->
+        <!--        </resources>-->

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayDataActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/goBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:elevation="7sp"
+                android:text="@string/back"
+                app:iconGravity="textEnd" />
+
+            <TextView
+                android:id="@+id/titleDataTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center_horizontal"
+                android:text="@string/form_title"
+                android:textSize="28sp" />
+
+            <ListView
+                android:id="@+id/availabilityListView"
+                android:layout_width="match_parent"
+                android:layout_height="607dp"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="7sp"
+                android:layout_marginEnd="10sp"
+                android:overScrollMode="always"
+                android:scrollbars="vertical"
+                android:scrollingCache="true" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

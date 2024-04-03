@@ -1,0 +1,19 @@
+
+
+CREATE TABLE IF NOT EXISTS CLIENTS (
+    Id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    lastName VARCHAR(50) ,
+    firstName VARCHAR(50) NOT NULL,
+    cardNumber VARCHAR(255) NOT NULL
+    );
+
+CREATE TABLE IF NOT EXISTS AGENCYBOOKINGS (
+    Id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    bookingReference VARCHAR(50) NOT NULL,
+    totalPrice DECIMAL(7, 2) NOT NULL,
+    arrivalDate DATE NOT NULL,
+    checkoutDate DATE NOT NULL,
+    numberPersons INT ,
+    clientId INT,
+    FOREIGN KEY (clientId) REFERENCES CLIENTS(Id) ON DELETE SET NULL
+    );

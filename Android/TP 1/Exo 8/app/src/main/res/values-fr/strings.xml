@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TP 1</string>
+    <string name="form_title">Disponibiltés</string>
+    <string-array name="competency_domain">
+        <item>Banques et finances</item>
+        <item>Education</item>
+        <item>Gestion</item>
+        <item>infrastructures</item>
+        <item>Ingéniere</item>
+        <item>Informatique</item>
+        <item>Médical</item>
+        <item>Transports</item>
+        <item>Autres</item>
+    </string-array>
+    <string name="departure_label">Ville de départ:</string>
+    <string name="arrival_label">Ville de d\'arrivée:</string>
+    <string name="search_button_label">Voir les horaires disponibles ></string>
+    <string name="departure_hint">Ex: Montpellier...</string>
+    <string name="arrival_hint">Ex: Paris...</string>
+    <string name="back">Retour</string>
+    <string name="from_label">De:</string>
+    <string name="to_label">A:</string>
+</resources>

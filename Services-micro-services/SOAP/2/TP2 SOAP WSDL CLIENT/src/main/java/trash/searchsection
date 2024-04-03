@@ -1,0 +1,8 @@
+//           System.out.println("Selected standart index "+starsNumberComboBox.getSelectedIndex());
+//           System.out.println("Selected standart String: "+starsNumberComboBox.getSelectedItem());
+//           System.out.println("City: "+citySearchTextField.getText());
+//           System.out.println("Arrival date: "+fromDateSpinner.getValue());
+//           System.out.println("Departure date: "+toDateSpinner.getValue());
+//           System.out.println("Minimum price: "+minPriceSpinner.getValue());
+//           System.out.println("Maximum price: "+maxPriceSpinner.getValue());
+//           System.out.println("Number of person: "+numberPersonSpinner.getValue());

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:overScrollMode="always"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/formTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="125sp"
+                android:gravity="center_horizontal|top"
+                android:text="@string/form_title"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lastNamePromptTextView"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:text="@string/departure_label" />
+
+                <EditText
+                    android:id="@+id/departureCityEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:hint="@string/departure_hint"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/firstNamePromptTextView"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:text="@string/arrival_label" />
+
+                <EditText
+                    android:id="@+id/destinationCityEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:hint="@string/arrival_hint"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="125sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="7dp"
+                android:alpha="0.9"
+                android:elevation="7dp"
+                android:text="@string/search_button_label"
+                app:cornerRadius="50sp" />
+
+            <!--        android:enabled="true"--></LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

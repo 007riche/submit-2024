@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CabinetVeterinaire_Common-final">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../CabinetVeterinaire Common/target/CabinetVeterinaire_Common-final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

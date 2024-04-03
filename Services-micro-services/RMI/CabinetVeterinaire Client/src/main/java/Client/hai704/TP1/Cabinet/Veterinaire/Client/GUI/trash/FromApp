@@ -1,0 +1,392 @@
+
+937 -->
+
+//        JButton btnNewButton = new JButton("Cabinet Veterinaire");
+//        btnNewButton.setRequestFocusEnabled(false);
+//        btnNewButton.setBorder(null);
+//        btnNewButton.setEnabled(false);
+//        btnNewButton.setBackground(new Color(29, 29, 29));
+//        btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 32));
+//        btnNewButton.setForeground(new Color(175, 177, 179));
+//        btnNewButton.setIcon(new ImageIcon("C:\\Users\\richard\\Documents\\Master 1 20232024\\HAI704\\RMI\\TP1\\CabinetVeterinaire Client\\src\\main\\resources\\icons\\64x64\\veterinary.png"));
+//        GroupLayout gl_appIconTitlePanel = new GroupLayout(appIconTitlePanel);
+//        gl_appIconTitlePanel.setHorizontalGroup(
+//                gl_appIconTitlePanel.createParallelGroup(Alignment.LEADING)
+//                        .addGroup(gl_appIconTitlePanel.createSequentialGroup()
+//                                .addComponent(btnNewButton, GroupLayout.PREFERRED_SIZE, 450, GroupLayout.PREFERRED_SIZE)
+//                                .addContainerGap(20, Short.MAX_VALUE))
+//        );
+//        gl_appIconTitlePanel.setVerticalGroup(
+//                gl_appIconTitlePanel.createParallelGroup(Alignment.LEADING)
+//                        .addGroup(Alignment.TRAILING, gl_appIconTitlePanel.createSequentialGroup()
+//                                .addGap(5)
+//                                .addComponent(btnNewButton, GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE))
+//        );
+//        appIconTitlePanel.setLayout(gl_appIconTitlePanel);
+
+895 -->
+//        listAllPatientsButton.addFocusListener(new FocusAdapter() {
+//            @Override
+//            public void focusGained(FocusEvent e) {
+//                listAllPatientsButton.setBorder(new MatteBorder(0, 7, 0, 0, (Color) new Color(255, 0, 0)));
+//            }
+//            @Override
+//            public void focusLost(FocusEvent e) {
+//                listAllPatientsButton.setBorder(null);
+//            }
+//        });
+
+746 --->
+//        JPanel appIconTitlePanel = new JPanel();
+//        appIconTitlePanel.setBorder(null);
+//        appIconTitlePanel.setBackground(new Color(29, 29, 29));
+//        appIconTitlePanel.setForeground(new Color(175, 177, 179));
+//        appIconTitlePanel.setFont(new Font("Tahoma", Font.PLAIN, 24));
+
+742 -->
+
+//        JPanel addPatientIconButtonPanel = new JPanel();
+//        addPatientIconButtonPanel.setBackground(new Color(29, 29, 29));
+//        JButton addPatientButton = new JButton("Ajouter un patient");
+//        addPatientButton.setRequestFocusEnabled(false);
+//        addPatientButton.addMouseListener(new MouseAdapter() {
+//            @Override
+//            public void mouseClicked(MouseEvent e) {
+//            }
+//            @Override
+//            public void mouseEntered(MouseEvent e) {
+//                addPatientButton.setBackground(new Color(49, 49, 49));
+//            }
+//            @Override
+//            public void mouseExited(MouseEvent e) {
+//                addPatientButton.setBackground(new Color(29, 29, 29));
+//            }
+//        });
+//        addPatientButton.setIcon(new ImageIcon("C:\\Users\\richard\\Documents\\Master 1 20232024\\HAI704\\RMI\\TP1\\CabinetVeterinaire Client\\src\\main\\resources\\icons\\32x32\\vet.png"));
+//        addPatientButton.setMargin(new Insets(2, 100, 2, 14));
+//        addPatientButton.setIconTextGap(25);
+//        addPatientButton.setForeground(new Color(175, 177, 179));
+//        addPatientButton.setFont(new Font("Tahoma", Font.PLAIN, 18));
+//        addPatientButton.setBorder(null);
+//        addPatientButton.setBackground(new Color(29, 29, 29));
+//        GroupLayout gl_addPatientIconButtonPanel = new GroupLayout(addPatientIconButtonPanel);
+//        gl_addPatientIconButtonPanel.setHorizontalGroup(
+//                gl_addPatientIconButtonPanel.createParallelGroup(Alignment.LEADING)
+//                        .addGap(0, 450, Short.MAX_VALUE)
+//                        .addComponent(addPatientButton, Alignment.TRAILING,
+//                                GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
+//        );
+//        gl_addPatientIconButtonPanel.setVerticalGroup(
+//                gl_addPatientIconButtonPanel.createParallelGroup(Alignment.LEADING)
+//                        .addGap(0, 37, Short.MAX_VALUE)
+//                        .addComponent(addPatientButton,
+//                                GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+//        );
+//        addPatientIconButtonPanel.setLayout(gl_addPatientIconButtonPanel);
+//
+
+732 -->
+
+
+//        JPanel listPatientsIconButtonPanel = new JPanel();
+//        listPatientsIconButtonPanel.setBackground(new Color(29, 29, 29));
+//
+//        JButton listAllPatientsButton = new JButton("Lister les patients");
+//        listAllPatientsButton.addActionListener(new ActionListener() {
+//            public void actionPerformed(ActionEvent e) {
+//                CardLayout cardLayout = (CardLayout) updateSection.getLayout();
+//                cardLayout.next(updateSection);
+////                cardLayout.show(listAllPatientsButton, editPatientScrollPane);
+////				updateSection
+//            }
+//        });
+//
+//        listAllPatientsButton.setRequestFocusEnabled(false);
+//        listAllPatientsButton.addMouseListener(new MouseAdapter() {
+//            @Override
+//            public void mouseEntered(MouseEvent e) {
+//                listAllPatientsButton.setBackground(new Color(49, 49, 49));
+//            }
+//            @Override
+//            public void mouseExited(MouseEvent e) {
+//                listAllPatientsButton.setBackground(new Color(29, 29, 29));
+//            }
+//
+//            @Override
+//            public void mouseClicked(MouseEvent e) {
+//                listAllPatientsButton.setBorder(new MatteBorder(0, 7, 0, 0, (Color) new Color(255, 0, 0)));
+//            }
+//        });
+//        listAllPatientsButton.setIcon(new ImageIcon("C:\\Users\\richard\\Documents\\Master 1 20232024\\HAI704\\RMI\\TP1\\CabinetVeterinaire Client\\src\\main\\resources\\icons\\32x32\\livestock.png"));
+//        listAllPatientsButton.setFont(new Font("Tahoma", Font.PLAIN, 18));
+//        listAllPatientsButton.setIconTextGap(10);
+//        listAllPatientsButton.setForeground(new Color(175, 177, 179));
+//        listAllPatientsButton.setBackground(new Color(29, 29, 29));
+//        listAllPatientsButton.setBorder(null);
+//        GroupLayout gl_listPatientsIconButtonPanel = new GroupLayout(listPatientsIconButtonPanel);
+//        gl_listPatientsIconButtonPanel.setHorizontalGroup(
+//                gl_listPatientsIconButtonPanel.createParallelGroup(Alignment.LEADING)
+//                        .addComponent(listAllPatientsButton, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
+//        );
+//        gl_listPatientsIconButtonPanel.setVerticalGroup(
+//                gl_listPatientsIconButtonPanel.createParallelGroup(Alignment.LEADING)
+//                        .addComponent(listAllPatientsButton, GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+//        );
+//        listPatientsIconButtonPanel.setLayout(gl_listPatientsIconButtonPanel);
+
+
+731 -->
+
+ JPanel listSpeciesIconButtonPanel = new JPanel();
+        listSpeciesIconButtonPanel.setBackground(new Color(29, 29, 29));
+
+        JButton listAllSpeciesButton = new JButton("Lister les esp\u00E8ces");
+        listAllSpeciesButton.setRequestFocusEnabled(false);
+        listAllSpeciesButton.addMouseListener(new MouseAdapter() {
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                listAllSpeciesButton.setBackground(new Color(49, 49, 49));
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                listAllSpeciesButton.setBackground(new Color(29, 29, 29));
+            }
+        });
+        listAllSpeciesButton.setMargin(new Insets(2, 100, 2, 14));
+        listAllSpeciesButton.setIcon(new ImageIcon("C:\\Users\\richard\\Documents\\Master 1 20232024\\HAI704\\RMI\\TP1\\CabinetVeterinaire Client\\src\\main\\resources\\icons\\32x32\\paw.png"));
+        listAllSpeciesButton.setIconTextGap(25);
+        listAllSpeciesButton.setForeground(new Color(175, 177, 179));
+        listAllSpeciesButton.setFont(new Font("Tahoma", Font.PLAIN, 18));
+        listAllSpeciesButton.setBorder(null);
+        listAllSpeciesButton.setBackground(new Color(29, 29, 29));
+        GroupLayout gl_listSpeciesIconButtonPanel = new GroupLayout(listSpeciesIconButtonPanel);
+        gl_listSpeciesIconButtonPanel.setHorizontalGroup(
+                gl_listSpeciesIconButtonPanel.createParallelGroup(Alignment.LEADING)
+                        .addComponent(listAllSpeciesButton, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
+        );
+        gl_listSpeciesIconButtonPanel.setVerticalGroup(
+                gl_listSpeciesIconButtonPanel.createParallelGroup(Alignment.LEADING)
+                        .addComponent(listAllSpeciesButton, GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+        );
+        listSpeciesIconButtonPanel.setLayout(gl_listSpeciesIconButtonPanel);
+
+730 --->
+
+//        JPanel searchPatientsIconButtonPanel = new JPanel();
+//        searchPatientsIconButtonPanel.setBackground(new Color(29, 29, 29));
+
+//        JButton searchPatientButtonInMenu = new JButton("Rechercher des patients");
+//        searchPatientButtonInMenu.setRequestFocusEnabled(false);
+//        searchPatientButtonInMenu.addMouseListener(new MouseAdapter() {
+//
+//            @Override
+//            public void mouseEntered(MouseEvent e) {
+//                searchPatientButtonInMenu.setBackground(new Color(49, 49, 49));
+//            }
+//            @Override
+//            public void mouseExited(MouseEvent e) {
+//                searchPatientButtonInMenu.setBackground(new Color(29, 29, 29));
+//            }
+//        });
+//        searchPatientButtonInMenu.setIcon(new ImageIcon("C:\\Users\\richard\\Documents\\Master 1 20232024\\HAI704\\RMI\\TP1\\CabinetVeterinaire Client\\src\\main\\resources\\icons\\32x32\\magnifying-glass.png"));
+//        searchPatientButtonInMenu.setIconTextGap(10);
+//        searchPatientButtonInMenu.setForeground(new Color(175, 177, 179));
+//        searchPatientButtonInMenu.setFont(new Font("Tahoma", Font.PLAIN, 18));
+//        searchPatientButtonInMenu.setBorder(null);
+//        searchPatientButtonInMenu.setBackground(new Color(29, 29, 29));
+//        GroupLayout gl_searchPatientsIconButtonPanel = new GroupLayout(searchPatientsIconButtonPanel);
+//        gl_searchPatientsIconButtonPanel.setHorizontalGroup(
+//                gl_searchPatientsIconButtonPanel.createParallelGroup(Alignment.LEADING)
+//                        .addComponent(searchPatientButtonInMenu, GroupLayout.DEFAULT_SIZE,
+//                                450, Short.MAX_VALUE)
+//        );
+//        gl_searchPatientsIconButtonPanel.setVerticalGroup(
+//                gl_searchPatientsIconButtonPanel.createParallelGroup(Alignment.LEADING)
+//                        .addComponent(searchPatientButtonInMenu, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE,
+//                                37, Short.MAX_VALUE)
+//        );
+//        searchPatientsIconButtonPanel.setLayout(gl_searchPatientsIconButtonPanel);
+
+860 -->
+  // Minimize the window frame
+//        JButton minimizeAppFrameButton = new JButton("") {
+//            int diameter = 32;
+//
+//
+//            @Override
+//            protected void paintComponent(Graphics g) {
+//                setContentAreaFilled(false);
+//                setOpaque(false);
+//                setBorderPainted(false);
+//                Graphics2D g2 = (Graphics2D) g;
+//                g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//                Float circle = new Ellipse2D.Float(getWidth() - diameter, 0, diameter, diameter);
+//                String imagePath = "C:\\Users\\\\richard\\\\Documents\\\\Master 1 20232024\\
+//                \\HAI704\\\\RMI\\\\TP1\\\\CabinetVeterinaire Client\\\\src\\\\main\\
+//                \\resources\\\\icons\\\\24x24\\\\down-left-and-up-right-to-center-black.png";
+//                if (getModel().isArmed()) {
+//                    g2.setColor(new Color(40, 215, 64));
+//                } else {
+//                    g2.setColor(new Color(40, 200, 64));
+//                }
+//                g2.setBackground(new Color(29, 29, 29, 0));
+//                g2.fill(circle);
+////	                g2.fillOval(0, 0, diameter, diameter);
+//                try {
+//                    BufferedImage icon1=ImageIO.read(new File(imagePath));
+//                    int x = (diameter - icon1.getWidth()) / 2;
+//                    int y = (diameter - icon1.getHeight()) / 2;
+//                    g2.drawImage(icon1, null, x, y);
+//
+//                } catch (IOException e) {
+//                    // TODO Auto-generated catch block
+////						e.printStackTrace();
+//                };
+//                super.paintComponent(g);
+//            }
+//
+//
+//            @Override
+//            protected void paintBorder(Graphics g) {
+//                // Custom border painting code here
+////				 g.setColor(new Color(245, 0, 0));
+//                Graphics2D g2 = (Graphics2D) g;
+////				 g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//                g2.setBackground(new Color(29, 29, 29, 0));
+//                if (getModel().isRollover()) {
+//                    g2.setColor(new Color(0, 255, 0));
+////			            g2.setBackground(new Color(29, 29, 29, 0));
+//                } else {
+//                    g2.setColor(new Color(0, 255, 0));
+////			            g2.setBackground(new Color(29, 29, 29, 0));
+//                }
+////
+//                g2.drawOval(0,0, diameter,diameter);
+//            }
+//
+//        };
+
+789 -->
+
+//        JButton closeAppButton = new JButton("") {
+//            int diameter = 32;
+//            @Override
+//            protected void paintComponent(Graphics g) {
+//                setContentAreaFilled(false);
+////				 setOpaque(false);
+////				 setBorderPainted(false);
+//                Graphics2D g2 = (Graphics2D) g;
+//
+//                g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+////	                Float circle = new Ellipse2D.Float(getWidth() - diameter, 0, diameter, diameter);
+//                String imagePath = "C:\\Users\\richard\\Documents\
+//                \Master 1 20232024\\HAI704\\RMI\\TP1\\CabinetVeterinaire Client\\
+//                src\\main\\resources\\icons\\24x24\\circle-xmark-black.png";
+//                if (getModel().isArmed()) {
+//                    g2.setColor(new Color(215, 95, 87));
+//                    g2.setBackground(new Color(35));
+//                } else {
+//                    g2.setColor(new Color(255, 95, 87));
+//                    g2.setBackground(new Color(35));
+//                }
+//                g2.setPaintMode();
+////	                g2.fill(circle);
+//                g2.fillOval(0, 0, diameter, diameter);
+//                try {
+//                    BufferedImage icon1=ImageIO.read(new File(imagePath));
+//                    int x = (diameter - icon1.getWidth()) / 2;
+//                    int y = (diameter - icon1.getHeight()) / 2;
+//                    g2.drawImage(icon1, null, x, y);
+//
+//                } catch (IOException e) {
+//                    // TODO Auto-generated catch block
+////						e.printStackTrace();
+//                };
+//                super.paintComponent(g);
+//
+//            }
+//
+//
+//            @Override
+//            protected void paintBorder(Graphics g) {
+//                // Custom border painting code here
+////				 g.setColor(new Color(245, 0, 0));
+//                Graphics2D g2 = (Graphics2D) g;
+//                g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//                if (getModel().isRollover()) {
+//                    g2.setColor(new Color(35));
+////			            g2.setBackground(new Color(35));
+//                } else {
+//                    g2.setColor(new Color(35));
+////			            g2.setBackground(new Color(35));
+//                }
+//                g2.setPaintMode();
+//                g2.drawOval(0,0, diameter,diameter);
+//            }
+//
+//        };
+
+186 -->
+
+//        VerticalMenu verticalMenu=new VerticalMenu();
+
+//        JPanel verticalMenu = new JPanel();
+//        verticalMenu.setBounds(new Rectangle(0, 0, 450, 700));
+//        verticalMenu.setBounds(0, 0, 450, 660);
+//        verticalMenu.setBorder(null);
+//        verticalMenu.setPreferredSize(new Dimension(450, 700));
+//        verticalMenu.setMinimumSize(new Dimension(450, 700));
+//        verticalMenu.setMaximumSize(new Dimension(700, 32767));
+//        verticalMenu.setForeground(new Color(175, 177, 179));
+//        verticalMenu.setBackground(new Color(29, 29, 29));
+
+
+209 -->
+
+//        List<VerticalMenuIconButton> menuButtons = new ArrayList<>() {{
+//            add(new VerticalMenuIconButton("Lister les patients", "32x32/livestock.png"));
+//            add(new VerticalMenuIconButton("Ajouter un patient", "32x32/vet.png"));
+//            add(new VerticalMenuIconButton("Lister les espèces", "32x32/paw.png"));
+//            add(new VerticalMenuIconButton("Rechercher des patients", "32x32/magnifying-glass.png"));
+//        }};
+//
+////        Menu verticalMenu = new Menu(appIconTitlePanel, menuButtons);
+//
+//        VetMenu menu = new VetMenu(appIconTitlePanel, menuButtons);
+
+        //        GroupLayout gl_verticalMenu = new GroupLayout(verticalMenu);
+//        gl_verticalMenu.setHorizontalGroup(
+//                gl_verticalMenu.createParallelGroup(Alignment.LEADING)
+//                        .addComponent(appIconTitlePanel, GroupLayout.PREFERRED_SIZE, 480, Short.MAX_VALUE)
+//                        .addGroup(gl_verticalMenu.createSequentialGroup()
+//                                .addGroup(gl_verticalMenu.createParallelGroup(Alignment.TRAILING, false)
+//                                        .addComponent(listPatientsIconButtonPanel,
+//                                        Alignment.LEADING, 0, 0, Short.MAX_VALUE)
+//                                        .addComponent(addPatientIconButtonPanel, Alignment.LEADING
+//                                        , GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
+//                                        .addComponent(listSpeciesIconButtonPanel, Alignment.LEADING,
+//                                        GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
+//                                        .addComponent(searchPatientsIconButtonPanel, Alignment.LEADING,
+//                                        GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE))
+//                                .addContainerGap())
+//        );
+//        gl_verticalMenu.setVerticalGroup(
+//                gl_verticalMenu.createParallelGroup(Alignment.LEADING)
+//                        .addGroup(gl_verticalMenu.createSequentialGroup()
+//                                .addContainerGap()
+//                                .addComponent(appIconTitlePanel, GroupLayout.PREFERRED_SIZE, 86, GroupLayout.PREFERRED_SIZE)
+//                                .addGap(140)
+//                                .addComponent(listPatientsIconButtonPanel,
+//                                GroupLayout.PREFERRED_SIZE, 37, GroupLayout.PREFERRED_SIZE)
+//                                .addPreferredGap(ComponentPlacement.RELATED)
+//                                .addComponent(addPatientIconButtonPanel, GroupLayout.PREFERRED_SIZE, 37, GroupLayout.PREFERRED_SIZE)
+//                                .addPreferredGap(ComponentPlacement.UNRELATED)
+//                                .addComponent(listSpeciesIconButtonPanel, GroupLayout.PREFERRED_SIZE, 37, GroupLayout.PREFERRED_SIZE)
+//                                .addPreferredGap(ComponentPlacement.UNRELATED)
+//                                .addComponent(searchPatientsIconButtonPanel, GroupLayout.PREFERRED_SIZE, 37, GroupLayout.PREFERRED_SIZE)
+//                                .addContainerGap(250, Short.MAX_VALUE))
+//        );
+//
+//
+//        verticalMenu.setLayout(gl_verticalMenu);

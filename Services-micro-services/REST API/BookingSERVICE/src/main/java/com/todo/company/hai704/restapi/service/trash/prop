@@ -1,0 +1,27 @@
+# MySQL Database Configuration
+spring.datasource.mysql.url=jdbc:mysql://localhost:3306/bookingservice
+spring.datasource.mysql.username=mysql_username
+spring.datasource.mysql.password=mysql_password
+spring.datasource.mysql.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# H2 Database Configuration
+spring.datasource.h2.url=jdbc:h2:mem:bookingservice
+spring.datasource.h2.username=sa
+spring.datasource.h2.password=password
+spring.datasource.h2.driver-class-name=org.h2.Driver
+
+spring.h2.console.enabled=true
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.show_sql=true
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+# Data source 1 configuration
+spring.datasource1.url=jdbc:mysql://localhost:3306/db1
+spring.datasource1.username=user1
+spring.datasource1.password=password1
+
+# Data source 2 configuration
+spring.datasource2.url=jdbc:mysql://localhost:3306/db2
+spring.datasource2.username=user2
+spring.datasource2.password=password2

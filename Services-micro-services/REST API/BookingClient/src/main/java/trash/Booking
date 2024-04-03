@@ -1,0 +1,9 @@
+        Agency running = Agency.getInstance();
+//        JDBCConnectionFactory jdbcConnectionFactory = new JDBCConnectionFactory(running.getAGENCY_DB_NAME().trim().toUpperCase(),
+//                "soap", "password", true);
+//        try {
+//            clientDAO = new ClientDAO(jdbcConnectionFactory.getConnectionDB());
+//            bookingHistoryDAO = new BookingHistoryDAO(jdbcConnectionFactory.getConnectionDB(), clientDAO);
+//        } catch (SQLException e) {
+////            throw new RuntimeException(e);
+//        }

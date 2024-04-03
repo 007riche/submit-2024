@@ -1,0 +1,106 @@
+
+
+//
+//            for (String  choice : chosen) {
+//                request.getChosenRooms().add(choice);
+//            }
+//
+
+//            remote.booking.MakeBooking request = new MakeBooking();
+//            request.setIdAgency(agencyID);
+//            request.setLoginId(username);
+//            request.setPassword(password);
+//            request.setFirstName(client.getFirstName());
+//            request.setLastName(client.getLastName());
+//            request.setToken(token);
+
+
+
+
+
+//            remote.booking.Response response = bookingService.makeBooking(request.getIdAgency(),
+//                    request.getLoginId(), request.getPassword(),
+//                    request.getFirstName(), request.getLastName(),
+//                    request.getChosenRooms(), request.getToken());
+
+
+//
+//            System.out.println("Requete: ");
+
+
+//            String soapEnvelope = "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" " +
+//                    "xmlns:ser=\"http://services.booking.service.web/\">" +
+//                    "<soapenv:Header/>" +
+//                    "<soapenv:Body>" +
+//                    "<ser:makeBooking>" +
+//
+//                    "<idAgency>agency123</idAgency>" +
+//                    "<loginId>user1</loginId>" +
+//                    "<password>pass123</password>" +
+//                    "<FirstName>John</FirstName>" +
+//                    "<LastName>Doe</LastName>" +
+//                    "<chosenRooms>room101</chosenRooms>" +
+//                    "<chosenRooms>room102</chosenRooms>" +
+//                    "<token>yourTokenHere</token>" +
+//
+//                    "</ser:makeBooking>" +
+//                    "</soapenv:Body>" +
+//                    "</soapenv:Envelope>";
+            //                    "<token>yourTokenHere</token>"
+
+//            String soapHead = "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" " +
+//                    "xmlns:ser=\"http://services.booking.service.web/\">" +
+//                    "<soapenv:Header/>" +
+//                    "<soapenv:Body>" +
+//                    "<ser:makeBooking>";
+//
+//            String soapFoot = "</ser:makeBooking>" +
+//                    "</soapenv:Body>" +
+//                    "</soapenv:Envelope>";
+//
+//            String soapBody =  "<idAgency>"+agencyID+"</idAgency>" +
+//                    "<loginId>"+username+"</loginId>" +
+//                    "<password>"+password+"</password>" +
+//                    "<FirstName>"+client.getFirstName()+"</FirstName>" +
+//                    "<LastName>"+client.getLastName()+"</LastName>";
+
+//            for (int i = 0; i < chosen.size(); i++) {
+//                soapBody=soapBody+"<chosenRooms>" + chosen.get(i) + "</chosenRooms>";
+//            }
+//
+//            soapBody = soapBody + "<token>"+token+"</token>";
+//
+//            String soapEnvelope = soapHead+soapBody+soapFoot;
+//
+//
+//            try {
+//                URL url = new URL(service.getHotelBookingServiceURL());
+//                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+//                conn.setDoOutput(true);
+//                conn.setRequestMethod("POST");
+//                conn.setRequestProperty("Content-Type", "text/xml; charset=utf-8");
+//
+//                OutputStream out = conn.getOutputStream();
+//                out.write(soapEnvelope.getBytes());
+//                out.flush();
+//
+//                if (conn.getResponseCode() == HttpURLConnection.HTTP_OK) {
+//                    // Read the response
+//                    BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+//                    String line = null;
+//                    StringBuilder response = new StringBuilder();
+//                    while ((line = reader.readLine()) != null) {
+//                        response.append(line);
+//                    }
+//                    reader.close();
+//                    // Print or process the response
+//                    System.out.println("SOAP Response: " + response.toString());
+//                } else {
+//                    System.err.println("SOAP Request Failed with HTTP Code: " + conn.getResponseCode());
+//                }
+//
+//                conn.disconnect();
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+
